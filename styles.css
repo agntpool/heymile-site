@@ -1,0 +1,1539 @@
+/* HeyMile — heymile.app
+   One small stylesheet, no scripts. System fonts, the app's blue, and the
+   graphite of its icon. Light and dark follow the device. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --ink: #1d1d1f;
+  --soft: #6e6e73;
+  --line: #e5e5ea;
+  --fill: #f2f2f7;
+  --link: #0066cc;
+  --accent: #007aff;
+  --mark: #fff3bf;
+  --mark-ink: #5c4a00;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0d0f;
+    --ink: #f5f5f7;
+    --soft: #a1a1a6;
+    --line: #2c2c2e;
+    --fill: #1c1c1e;
+    --link: #2997ff;
+    --accent: #0a84ff;
+    --mark: #4a3d00;
+    --mark-ink: #ffe680;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  left: 16px;
+  top: 16px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+/* The odometer from the app icon: 001, the last drum in the app's blue. */
+.odometer {
+  display: block;
+  width: 110px;
+  height: 50px;
+}
+
+.odometer .well {
+  fill: var(--fill);
+}
+
+.odometer .digit {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.odometer .rule {
+  stroke: var(--ink);
+  stroke-opacity: 0.16;
+  stroke-width: 1;
+}
+
+.odometer .tile {
+  fill: var(--accent);
+}
+
+.odometer .one {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- A page with one short message (not found) ---------- */
+
+.simple main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.simple .brand {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.simple .brand a {
+  color: inherit;
+}
+
+.simple h1 {
+  margin: 20px 0 0;
+  font-size: clamp(40px, 9vw, 72px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.simple .lede {
+  margin: 28px 0 0;
+  font-size: 21px;
+}
+
+/* ---------- Homepage ---------- */
+
+.home {
+  --display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* A quiet bar that stays put: the name, and one way to get help. */
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+}
+
+.top nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  font-size: 14px;
+}
+
+.top .brand {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.top a {
+  color: var(--soft);
+  padding: 6px 0;
+}
+
+.top a:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.home main {
+  flex: 1;
+}
+
+.home section {
+  padding: clamp(72px, 12vw, 144px) 24px;
+}
+
+.home h1,
+.home h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  margin: 0;
+}
+
+.home h1 {
+  margin-top: 28px;
+  font-size: clamp(48px, 11vw, 104px);
+  line-height: 1.02;
+}
+
+.home h1 span {
+  display: block;
+}
+
+.home .quiet {
+  color: var(--soft);
+}
+
+.home h2 {
+  font-size: clamp(36px, 6.4vw, 64px);
+  line-height: 1.05;
+}
+
+.home h3 {
+  margin: 28px 0 0;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.home p {
+  margin: 0;
+}
+
+.home .eyebrow {
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--link);
+}
+
+.home .lede {
+  margin-top: 24px;
+  font-size: clamp(21px, 2.6vw, 28px);
+  line-height: 1.25;
+  color: var(--soft);
+}
+
+.home .soon {
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--soft);
+}
+
+/* The app's screens, held like a phone. */
+.phone {
+  width: min(300px, 76vw);
+  margin: 0 auto;
+  padding: 9px;
+  border-radius: 50px;
+  background: #1b1b1d;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.08) inset,
+    0 30px 60px -20px rgb(0 0 0 / 0.35),
+    0 12px 24px -12px rgb(0 0 0 / 0.25);
+}
+
+.phone picture {
+  display: block;
+}
+
+.phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 41px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: clamp(56px, 9vw, 104px);
+}
+
+.hero .phone {
+  margin-top: clamp(48px, 7vw, 80px);
+}
+
+/* The features. On a phone, each has its own screen. On a wide screen with
+   the script running, one phone stays put and its screen changes as the
+   words scroll past. */
+.home .showcase {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.step {
+  display: grid;
+  gap: 48px;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: clamp(72px, 12vw, 144px) 0;
+  text-align: center;
+}
+
+.home .step .copy p:not(.eyebrow):not(.note),
+.home .band .intro p:last-child,
+.home .carplay .intro p:last-child,
+.home .statement > p {
+  margin-top: 20px;
+  font-size: clamp(19px, 2vw, 21px);
+  line-height: 1.45;
+  color: var(--soft);
+}
+
+.home .step .note {
+  margin: 20px 0 0;
+}
+
+.stage {
+  display: none;
+}
+
+.screens {
+  position: relative;
+  aspect-ratio: 657 / 1428;
+  border-radius: 41px;
+  overflow: hidden;
+}
+
+.screens img {
+  border-radius: 0;
+}
+
+.screens > * {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 0.55s ease, transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.showcase[data-step="0"] .screens > :nth-child(1),
+.showcase[data-step="1"] .screens > :nth-child(2),
+.showcase[data-step="2"] .screens > :nth-child(3),
+.showcase[data-step="3"] .screens > :nth-child(4),
+.showcase[data-step="4"] .screens > :nth-child(5) {
+  opacity: 1;
+  transform: none;
+}
+
+@media (min-width: 900px) {
+  .js .showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .js .stage {
+    display: block;
+    position: sticky;
+    top: max(72px, calc(50vh - 334px));
+    height: 668px;
+    align-self: start;
+    margin: 12vh 0;
+  }
+
+  .js .step {
+    min-height: 92vh;
+    max-width: 440px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    align-content: center;
+    text-align: left;
+    opacity: 0.28;
+    transition: opacity 0.5s ease;
+    /* The pinned phone carries the motion here. */
+    animation: none;
+  }
+
+  .js .step .phone {
+    display: none;
+  }
+
+  .js .showcase[data-step="0"] .step:nth-child(1),
+  .js .showcase[data-step="1"] .step:nth-child(2),
+  .js .showcase[data-step="2"] .step:nth-child(3),
+  .js .showcase[data-step="3"] .step:nth-child(4),
+  .js .showcase[data-step="4"] .step:nth-child(5) {
+    opacity: 1;
+  }
+}
+
+/* A full-width band in the app's quiet grey. */
+.band {
+  background: var(--fill);
+  text-align: center;
+}
+
+.band .intro {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* The Lock Screen card, acted out in twelve seconds: miles count while
+   driving, the drive is logged, one tap answers. Always dark, like the real one. */
+.live {
+  --loop: 12s;
+  display: grid;
+  width: min(440px, 100%);
+  margin: clamp(40px, 6vw, 64px) auto 0;
+  text-align: left;
+}
+
+.live-card {
+  grid-area: 1 / 1;
+  align-self: center;
+  padding: 20px 22px;
+  border-radius: 28px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.45);
+  opacity: 0;
+  animation: var(--loop) cubic-bezier(0.2, 0.8, 0.2, 1) infinite both;
+}
+
+.live-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.live-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.live-title.blue {
+  color: #0a84ff;
+}
+
+/* The car beside "Driving" is the app's own icon, taken from its Lock Screen
+   card, so the drawing and the screenshots show the same one. */
+/* Icons are Apple's SF Symbols, the same ones the app uses (car.fill,
+   briefcase.fill, house.fill...), as plain images already in their colour,
+   so every browser shows them the same way. */
+.sf {
+  display: inline-block;
+  object-fit: contain;
+}
+
+.glyph {
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: -0.25em;
+}
+
+.live-title.green {
+  color: #30d158;
+}
+
+.live-miles {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: ui-rounded, -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.live-miles small {
+  margin-left: 5px;
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.live-sub {
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.live-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* "Other": for a reason that isn't one of the usual ones. */
+.live-button.other {
+  padding-left: 14px;
+  padding-right: 14px;
+  background: rgb(255 255 255 / 0.16);
+  color: rgb(255 255 255 / 0.72);
+}
+
+@media (max-width: 480px) {
+  .live-button {
+    font-size: 13px;
+  }
+}
+
+.live-button {
+  padding: 9px 8px;
+  border-radius: 999px;
+  background: rgb(10 132 255 / 0.28);
+  color: #4da3ff;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The miles roll like an odometer drum. */
+.roller {
+  --digit: 1em;
+  display: inline-block;
+  height: var(--digit);
+  overflow: hidden;
+}
+
+.roller i {
+  display: block;
+  height: var(--digit);
+  font-style: normal;
+  animation: var(--loop) cubic-bezier(0.3, 0.9, 0.3, 1) infinite both;
+}
+
+.is-driving {
+  animation-name: live-driving;
+}
+
+.is-logged {
+  animation-name: live-logged;
+}
+
+.is-done {
+  animation-name: live-done;
+}
+
+.roller.tenths i {
+  animation-name: roll-tenths;
+}
+
+.roller.ones i {
+  animation-name: roll-ones;
+}
+
+.live-button.tapped {
+  animation: live-tap var(--loop) ease infinite both;
+}
+
+@keyframes live-driving {
+  0%, 3% { opacity: 0; transform: translateY(14px) scale(0.98); }
+  7%, 42% { opacity: 1; transform: none; }
+  46%, 100% { opacity: 0; transform: translateY(-10px) scale(0.98); }
+}
+
+@keyframes live-logged {
+  0%, 43% { opacity: 0; transform: translateY(14px) scale(0.98); }
+  47%, 74% { opacity: 1; transform: none; }
+  78%, 100% { opacity: 0; transform: translateY(-10px) scale(0.98); }
+}
+
+@keyframes live-done {
+  0%, 75% { opacity: 0; transform: translateY(14px) scale(0.98); }
+  79%, 96% { opacity: 1; transform: none; }
+  100% { opacity: 0; transform: translateY(-10px) scale(0.98); }
+}
+
+@keyframes roll-tenths {
+  0%, 10.2% { transform: translateY(0); }
+  11.2%, 13.4% { transform: translateY(calc(var(--digit) * -1)); }
+  14.4%, 16.6% { transform: translateY(calc(var(--digit) * -2)); }
+  17.6%, 19.8% { transform: translateY(calc(var(--digit) * -3)); }
+  20.8%, 23.0% { transform: translateY(calc(var(--digit) * -4)); }
+  24.0%, 26.2% { transform: translateY(calc(var(--digit) * -5)); }
+  27.2%, 29.4% { transform: translateY(calc(var(--digit) * -6)); }
+  30.4%, 32.6% { transform: translateY(calc(var(--digit) * -7)); }
+  33.6%, 35.8% { transform: translateY(calc(var(--digit) * -8)); }
+  36.8%, 39.0% { transform: translateY(calc(var(--digit) * -9)); }
+  40.0%, 100.0% { transform: translateY(calc(var(--digit) * -10)); }
+}
+
+@keyframes roll-ones {
+  0%, 32.6% { transform: translateY(0); }
+  33.6%, 100% { transform: translateY(calc(var(--digit) * -1)); }
+}
+
+@keyframes live-tap {
+  0%, 64% { background: var(--lc-blue-bg); color: var(--lc-blue); transform: none; }
+  67% { background: var(--lc-blue-solid); color: #fff; transform: scale(0.96); }
+  70%, 100% { background: var(--lc-blue-solid); color: #fff; transform: none; }
+}
+
+.home .note {
+  max-width: 520px;
+  margin: 56px auto 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--soft);
+}
+
+/* The planned CarPlay screen, drawn: a car display with one card and three
+   large buttons, and the same drive counting on the iPhone beneath it. */
+.carplay {
+  text-align: center;
+}
+
+.carplay .intro {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.tag {
+  margin-left: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--fill);
+  color: var(--soft);
+  font-size: 13px;
+  font-weight: 600;
+  vertical-align: 2px;
+}
+
+.dash {
+  --loop: 12s;
+  width: min(680px, 100%);
+  margin: clamp(40px, 6vw, 64px) auto 0;
+  text-align: left;
+}
+
+/* The car's display keeps the same wide shape on every device, like a
+   picture of it: everything inside is sized from the display's own width, so
+   on a phone it gets smaller but never reflows into something else. */
+.car-screen {
+  container-type: inline-size;
+  aspect-ratio: 16 / 9;
+  border: 8px solid #1b1b1d;
+  border-radius: 28px;
+  background: #0b0b0d;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.45);
+}
+
+.car-inner {
+  display: grid;
+  grid-template-columns: 9cqw 1fr;
+  height: 100%;
+}
+
+.car-dock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2cqw;
+  padding: 3cqw 0;
+  background: #17171a;
+}
+
+.car-time {
+  margin-bottom: 0.6cqw;
+  font-size: 2.2cqw;
+  font-weight: 600;
+}
+
+.car-dock i {
+  width: 5cqw;
+  height: 5cqw;
+  border-radius: 1.4cqw;
+  background: #2c2c30;
+}
+
+.car-dock i.on {
+  background: #0a84ff;
+}
+
+.car-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3.6cqw 3.6cqw 3.4cqw;
+  animation: car-cycle var(--loop) ease infinite both;
+}
+
+.home .car-title {
+  font-size: 4.8cqw;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.car-main dl {
+  display: grid;
+  gap: 2.4cqw;
+  margin: 0;
+}
+
+.car-main dt {
+  font-size: 2.3cqw;
+  line-height: 1.2;
+  color: rgb(255 255 255 / 0.55);
+}
+
+.car-main dd {
+  margin: 0.4cqw 0 0;
+  font-size: 3.8cqw;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.car-miles {
+  display: inline-flex;
+  align-items: baseline;
+  font-variant-numeric: tabular-nums;
+}
+
+.car-miles .roller {
+  --digit: 1.15em;
+}
+
+.car-answer {
+  display: grid;
+}
+
+.car-answer span {
+  grid-area: 1 / 1;
+}
+
+.car-answer .ask {
+  color: rgb(255 255 255 / 0.55);
+  animation: car-ask var(--loop) ease infinite both;
+}
+
+.car-answer .answered {
+  color: #30d158;
+  animation: car-answered var(--loop) ease infinite both;
+}
+
+.car-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6cqw;
+}
+
+.car-button {
+  padding: 2.3cqw 0.6cqw;
+  border-radius: 2.2cqw;
+  background: #26262a;
+  font-size: 2.7cqw;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.car-button.tapped {
+  animation: car-tap var(--loop) ease infinite both;
+}
+
+.live-card.car-phone {
+  width: min(360px, 100%);
+  margin: 18px 0 0 auto;
+  opacity: 1;
+  animation: car-cycle var(--loop) ease infinite both;
+}
+
+.home .car-caption {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: right;
+  color: var(--soft);
+}
+
+.carplay > .note {
+  margin-top: 40px;
+}
+
+/* On a phone the display runs nearly edge to edge, so its text stays readable. */
+@media (max-width: 560px) {
+  .car-screen {
+    margin: 0 -10px;
+    border-width: 6px;
+    border-radius: 22px;
+  }
+}
+
+@keyframes car-cycle {
+  0% { opacity: 0; }
+  4%, 95% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes car-ask {
+  0%, 47% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes car-answered {
+  0%, 47% { opacity: 0; transform: translateY(6px); }
+  51%, 100% { opacity: 1; transform: none; }
+}
+
+@keyframes car-tap {
+  0%, 42% { background: #26262a; transform: none; }
+  45% { background: #0a84ff; transform: scale(0.96); }
+  48%, 100% { background: #0a84ff; transform: none; }
+}
+
+/* A few words, centred, with room around them. */
+.statement {
+  text-align: center;
+}
+
+.home .statement > * {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .statement > p + p {
+  margin-top: 16px;
+}
+
+/* Examples of who it's for: a quiet row of chips. */
+.home .statement > .trades {
+  max-width: 780px;
+}
+
+.trades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 36px;
+  padding: 0;
+  list-style: none;
+}
+
+.trades li {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--fill);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.price h2 {
+  font-size: clamp(48px, 9vw, 88px);
+}
+
+.home .foot {
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.foot .fine {
+  max-width: 620px;
+  margin: 16px auto 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--soft);
+}
+
+/* Moving between the home page and the others is a soft cross-fade, with
+   the name staying where it is. */
+@view-transition {
+  navigation: auto;
+}
+
+.brand {
+  view-transition-name: brand;
+}
+
+/* The hero arrives in order: the odometer rolls over to 001, then the words,
+   then the phone. */
+.hero h1 span,
+.hero .lede,
+.hero .soon,
+.hero .phone {
+  animation: arrive 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.hero h1 span:nth-child(1) { animation-delay: 0.15s; }
+.hero h1 span:nth-child(2) { animation-delay: 0.3s; }
+.hero .lede { animation-delay: 0.5s; }
+.hero .soon { animation-delay: 0.65s; }
+
+.hero .phone {
+  animation-name: arrive-phone;
+  animation-duration: 1.2s;
+  animation-delay: 0.55s;
+}
+
+.odometer.roll .one {
+  transform-box: view-box;
+  animation: drum-in 1s cubic-bezier(0.3, 0.9, 0.3, 1) 0.7s both;
+}
+
+.odometer.roll .zero {
+  animation-name: drum-out;
+}
+
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes arrive-phone {
+  from { opacity: 0; transform: translateY(64px) scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes drum-in {
+  from { transform: translateY(48px); }
+  to { transform: none; }
+}
+
+@keyframes drum-out {
+  from { transform: none; }
+  to { transform: translateY(-48px); }
+}
+
+/* For anyone who has asked their device for less motion: everything is in
+   place from the start, and the Lock Screen card rests on its question. */
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 span,
+  .hero .lede,
+  .hero .soon,
+  .hero .phone,
+  .odometer.roll .one,
+  .live-card,
+  .live-card.car-phone,
+  .roller i,
+  .live-button.tapped,
+  .car-main,
+  .car-answer span,
+  .car-button.tapped {
+    animation: none;
+  }
+
+  .car-answer .ask {
+    opacity: 0;
+  }
+
+  .car-button.tapped {
+    background: #0a84ff;
+  }
+
+  .odometer.roll .zero {
+    display: none;
+  }
+
+  .is-logged {
+    opacity: 1;
+  }
+
+  .screens picture,
+  .js .step {
+    transition: none;
+  }
+
+  @view-transition {
+    navigation: none;
+  }
+}
+
+/* Sections ease in as they scroll into view, where the browser can do that
+   without a script and the person hasn't asked for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 45%;
+    }
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Footer, on every page ---------- */
+
+.foot {
+  padding: 24px 24px 32px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.foot ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foot a {
+  color: var(--soft);
+  padding: 6px 0;
+  display: inline-block;
+}
+
+.foot a:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* ---------- Pages ---------- */
+
+.bar {
+  border-bottom: 1px solid var(--line);
+}
+
+.bar div {
+  display: flex;
+  align-items: center;
+  gap: 4px 24px;
+  flex-wrap: wrap;
+  max-width: 728px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  font-size: 15px;
+}
+
+.bar .brand {
+  margin-right: auto;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.bar a {
+  color: var(--soft);
+  padding: 6px 0;
+}
+
+.bar a:hover,
+.bar a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.page main {
+  flex: 1;
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+}
+
+.page h1 {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(34px, 6vw, 48px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.page .dateline {
+  margin: 12px 0 0;
+  font-size: 15px;
+  color: var(--soft);
+}
+
+.page .lede {
+  margin: 32px 0 0;
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+.page h2 {
+  margin: 48px 0 12px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.page h3 {
+  margin: 28px 0 8px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.page p,
+.page li {
+  margin: 0 0 12px;
+}
+
+.page ul,
+.page ol {
+  margin: 0 0 12px;
+  padding-left: 22px;
+}
+
+.page strong {
+  font-weight: 600;
+}
+
+.page .summary {
+  margin: 32px 0 0;
+  padding: 20px 22px 8px;
+  background: var(--fill);
+  border-radius: 18px;
+}
+
+.page .summary h2 {
+  margin: 0 0 12px;
+  font-size: 17px;
+}
+
+.page .contact {
+  margin: 24px 0 0;
+  padding: 20px 22px;
+  background: var(--fill);
+  border-radius: 18px;
+}
+
+.page .contact p {
+  margin: 0;
+}
+
+.page .contact .label {
+  font-size: 14px;
+  color: var(--soft);
+}
+
+.page .contact .value {
+  font-size: 21px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+/* A detail that must be confirmed before this page is published. */
+.todo {
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--mark);
+  color: var(--mark-ink);
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .page main {
+    padding-top: 40px;
+  }
+
+  .bar div {
+    padding: 10px 20px;
+  }
+
+  .bar .brand {
+    flex-basis: 100%;
+  }
+}
+
+@media print {
+  .bar,
+  .foot,
+  .skip {
+    display: none;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+}
+
+/* Personal in green, as in the app: map, widget, car and Lock Screen. */
+.live-button.personal {
+  background: rgb(48 209 88 / 0.25);
+  color: #30d158;
+}
+
+/* The car's screen: Apple's grid of two large buttons. */
+.car-main .car-title {
+  font-size: 3.6cqw;
+  font-weight: 700;
+  line-height: 1.2;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
+}
+
+/* The real screen's title is white, before and after the tap. */
+.car-main .car-answer .ask,
+.car-main .car-answer .answered {
+  color: #fff;
+}
+
+.car-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4cqw;
+  margin-top: 3cqw;
+}
+
+.car-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4cqw;
+  font-size: 2.9cqw;
+  font-weight: 600;
+  color: #fff;
+}
+
+.car-tile .sf {
+  width: 11cqw;
+  height: 11cqw;
+}
+
+.car-tile.personal .sf { animation: car-dim var(--loop) ease infinite both; }
+.car-tile.tapped .sf { animation: car-press var(--loop) ease infinite both; }
+
+@keyframes car-press {
+  0%, 42% { transform: none; }
+  45% { transform: scale(0.9); }
+  48%, 100% { transform: none; }
+}
+
+/* The other answer turns grey once one is chosen, as on the real screen. */
+@keyframes car-dim {
+  0%, 45% { filter: none; opacity: 1; }
+  48%, 100% { filter: grayscale(1); opacity: 0.55; }
+}
+
+/* Feature tiles, as on Apple's own pages: an icon, a short title, one line. */
+.tiles {
+  list-style: none;
+  padding: 0;
+  margin: 48px auto 0;
+  max-width: 640px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+
+/* No word left alone on a heading's last line. */
+h1, h2 { text-wrap: balance; }
+
+.tiles li {
+  padding: 28px 18px 26px;
+  border-radius: 24px;
+  background: var(--tile, rgb(0 0 0 / 0.04));
+}
+
+.tiles .sf {
+  width: 40px;
+  height: 40px;
+}
+
+.tiles h3 {
+  margin: 14px 0 6px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.tiles p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--soft);
+}
+
+@media (prefers-color-scheme: dark) {
+  .tiles li { --tile: rgb(255 255 255 / 0.06); }
+}
+
+@media (max-width: 480px) {
+  .tiles { gap: 12px; }
+  .tiles li { padding: 22px 12px 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .car-tile .sf { animation: none !important; }
+}
+
+/* The drive card while driving: the start time beside "Driving", and both
+   answers already there, as on the real Lock Screen. */
+.live-since {
+  margin-left: 6px;
+  font-size: 0.72em;
+  font-weight: 500;
+  white-space: nowrap;
+  color: rgb(255 255 255 / 0.55);
+}
+
+.live-title {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .live-since { font-size: 0.62em; margin-left: 4px; }
+}
+
+.live-buttons.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Each version of the car's title is whole ("Driving · 2.2 mi" and
+   "Business · 2.2 mi"), so the dot always sits right after the word. */
+.car-main .car-answer {
+  display: grid;
+  justify-items: start;
+}
+
+.car-main .car-answer > span {
+  white-space: nowrap;
+}
+
+/* The drive card as iOS draws it on the Lock Screen: white with dark text
+   when the iPhone is in light mode, black in dark mode, with tinted
+   Business (blue) and Personal (green) buttons. */
+:root {
+  --lc-bg: #ffffff;
+  --lc-fg: #000000;
+  --lc-soft: rgb(60 60 67 / 0.6);
+  --lc-blue: #007aff;
+  --lc-blue-bg: rgb(0 122 255 / 0.12);
+  --lc-blue-solid: #007aff;
+  --lc-green: #28a745;
+  --lc-green-bg: rgb(52 199 89 / 0.16);
+  --lc-shadow: 0 24px 50px -22px rgb(0 0 0 / 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lc-bg: #000000;
+    --lc-fg: #ffffff;
+    --lc-soft: rgb(255 255 255 / 0.6);
+    --lc-blue: #4da3ff;
+    --lc-blue-bg: rgb(10 132 255 / 0.28);
+    --lc-blue-solid: #0a84ff;
+    --lc-green: #30d158;
+    --lc-green-bg: rgb(48 209 88 / 0.25);
+    --lc-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.45);
+  }
+}
+
+.live-card {
+  background: var(--lc-bg);
+  color: var(--lc-fg);
+  box-shadow: var(--lc-shadow);
+}
+
+.live-title.blue { color: var(--lc-blue); }
+.live-title.green { color: var(--lc-green); }
+
+.live-miles small,
+.live-sub,
+.live-since {
+  color: var(--lc-soft);
+}
+
+.live-button {
+  background: var(--lc-blue-bg);
+  color: var(--lc-blue);
+}
+
+.live-button.personal {
+  background: var(--lc-green-bg);
+  color: var(--lc-green);
+}
+
+.live-button.other {
+  background: rgb(120 120 128 / 0.16);
+  color: var(--lc-soft);
+}
+
+/* The Lock Screen, drawn: date, clock, and HeyMile's card as iOS shows it
+   on a light Lock Screen, the same card as everywhere else on this page. */
+.lockshot {
+  position: relative;
+  aspect-ratio: 657 / 1428;
+  border-radius: 41px;
+  overflow: hidden;
+  container-type: inline-size;
+  background:
+    radial-gradient(120% 60% at 80% 10%, #4b5578 0%, transparent 60%),
+    radial-gradient(90% 50% at 10% 70%, #2c3350 0%, transparent 65%),
+    linear-gradient(180deg, #1e2235 0%, #121420 100%);
+  color: #fff;
+  text-align: center;
+}
+
+/* Inside the pinned phone, the drawn Lock Screens stack like the
+   screenshots: each fills the screen, and only the current one shows. */
+.screens > .lockshot {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+}
+
+.lock-date {
+  margin: 0;
+  padding-top: 15cqw;
+  font-size: 5.2cqw;
+  font-weight: 600;
+  color: rgb(255 255 255 / 0.85);
+}
+
+.lock-time {
+  margin: 0;
+  font-size: 30cqw;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: rgb(235 238 250 / 0.92);
+}
+
+.lock-card {
+  position: absolute;
+  left: 4.5cqw;
+  right: 4.5cqw;
+  bottom: 18cqw;
+  padding: 4.6cqw 5cqw;
+  border-radius: 7cqw;
+  background: var(--lc-bg);
+  color: var(--lc-fg);
+  text-align: left;
+  box-shadow: 0 2cqw 6cqw rgb(0 0 0 / 0.25);
+}
+
+.lock-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2cqw;
+}
+
+.lock-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.8cqw;
+  font-size: 5cqw;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.lock-title.blue { color: var(--lc-blue); }
+.lock-title.green { color: var(--lc-green); }
+
+.lock-title .glyph {
+  width: 5.6cqw;
+  height: 5.6cqw;
+}
+
+.lock-since {
+  font-size: 3.6cqw;
+  font-weight: 500;
+  color: var(--lc-soft);
+}
+
+.lock-miles {
+  font-family: ui-rounded, -apple-system, BlinkMacSystemFont, "SF Pro Rounded", sans-serif;
+  font-size: 9cqw;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.lock-miles small {
+  margin-left: 1cqw;
+  font-size: 4.4cqw;
+  font-weight: 600;
+  color: var(--lc-soft);
+}
+
+.lock-sub {
+  margin: 2cqw 0 0;
+  font-size: 3.8cqw;
+  color: var(--lc-soft);
+}
+
+.lock-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2cqw;
+  margin-top: 3.4cqw;
+}
+
+.lock-button {
+  padding: 2.4cqw 0;
+  border-radius: 999px;
+  background: var(--lc-blue-bg);
+  color: var(--lc-blue);
+  font-size: 4cqw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lock-button.personal {
+  background: var(--lc-green-bg);
+  color: var(--lc-green);
+}
