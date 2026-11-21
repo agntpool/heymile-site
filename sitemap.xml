@@ -1,7 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://heymile.app/</loc></url>
-  <url><loc>https://heymile.app/privacy</loc></url>
-  <url><loc>https://heymile.app/terms</loc></url>
-  <url><loc>https://heymile.app/support</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://heymile.app/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/es/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/es/para/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/rideshare-drivers/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/rideshare-drivers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/conductores-de-rideshare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/rideshare-drivers/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/es/para/conductores-de-rideshare/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/rideshare-drivers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/conductores-de-rideshare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/rideshare-drivers/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/delivery-drivers/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/delivery-drivers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/repartidores/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/delivery-drivers/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/es/para/repartidores/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/delivery-drivers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/repartidores/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/delivery-drivers/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/real-estate-agents/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/contractors/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/contractors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/contratistas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/contractors/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/es/para/contratistas/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/contractors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/contratistas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/contractors/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/home-health-care/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/home-health-care/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/cuidado-en-casa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/home-health-care/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/es/para/cuidado-en-casa/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/home-health-care/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/cuidado-en-casa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/home-health-care/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/sales-reps/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/photographers/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/landscapers/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/landscapers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/jardineria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/landscapers/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/es/para/jardineria/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heymile.app/for/landscapers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heymile.app/es/para/jardineria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heymile.app/for/landscapers/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/couriers/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/for/insurance-adjusters/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/privacy/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/terms/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://heymile.app/support/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.4</priority>
+  </url>
 </urlset>

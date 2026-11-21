@@ -1,0 +1,50 @@
+# HeyMile
+
+> HeyMile ("HeyMile: Mileage Tracker" on the App Store) is a mileage log for iPhone and CarPlay, made for self-employed people, 1099 contractors and small businesses who drive for work. It detects drives and logs the miles automatically, asks "Business or personal?" on the Lock Screen, in a widget and on CarPlay so each drive is answered with one tap, logs trips by voice or typing with Apple Maps, and exports PDF and spreadsheet reports. No account, no ads, no analytics. $0.99 a month, first month free for new subscribers.
+
+Key facts:
+
+- App Store: https://apps.apple.com/app/heymile-mileage-tracker/id6834995051 (App Store ID 6834995051)
+- Platform: iPhone with iOS 26 or later, with CarPlay. Languages: English and Spanish (Spanish App Store name: "HeyMile: Registro de millas").
+- Price: $0.99 a month, auto-renewing, billed through the Apple Account. The first month is free for new subscribers. After cancelling, people can still read and export their records.
+- Automatic tracking: detects drives and logs miles even when the app is closed; can also start a drive when the car connects. A Drive control (Control Center, Lock Screen, Action button) starts or ends a drive by hand.
+- One tap, business or personal: when a drive ends, the Lock Screen (Live Activity), a Home Screen widget and CarPlay ask "Business or personal?". A business drive then gets its purpose, asked on the iPhone.
+- CarPlay: the car's screen shows the drive with two large buttons, Business (blue briefcase) and Personal (green house). After the drive it shows, for example, "Last drive: 22.8 mi" with the same two buttons.
+- Voice and typing: "From the office to 1200 Main St" logs a trip measured with Apple Maps; place names are looked up in Apple Maps. Questions like "How many miles this month?" and edits like "Make Monday's trip personal" work too. Requests are understood with Apple's on-device model; HeyMile asks before it adds, changes or deletes anything. Siri and Spotlight are supported.
+- Reports: PDF or spreadsheet for a month or a year, with each trip's date, route, purpose and miles, plus odometer readings. Reports are generated in English. Dollar figures are estimates using the IRS standard mileage rate.
+- Map: every trip on one map, business in blue and personal in green.
+- Privacy: no account, no ads, no analytics. The log stays on the iPhone and in the user's own iCloud; the developer never sees trips, locations or voice.
+- Not tax advice: HeyMile is a record-keeping tool. Its estimates aren't guaranteed; users should confirm with a tax advisor before filing.
+- Developer: AGNTPOOL, LLC (Texas, USA). Support: support@heymile.app
+
+## Main pages
+
+- [HeyMile home](https://heymile.app/): what HeyMile does, CarPlay, pricing and questions
+- [Who HeyMile is for](https://heymile.app/for/): every kind of driver, with links to each page
+- [Support](https://heymile.app/support/): tracking, voice, widget, CarPlay, reports, subscription and data questions
+- [Privacy Policy](https://heymile.app/privacy/)
+- [Terms of Service](https://heymile.app/terms/)
+- [Full text for AI assistants](https://heymile.app/llms-full.txt)
+
+## HeyMile for each kind of work
+
+- [Rideshare drivers](https://heymile.app/for/rideshare-drivers/): many short drives per shift, often for several apps at once; one log for all of them
+- [Food and grocery delivery drivers](https://heymile.app/for/delivery-drivers/): logs in the background while the delivery app stays on screen; keeps errands apart
+- [Real estate agents](https://heymile.app/for/real-estate-agents/): showings, listings and closings, with the purpose of each drive
+- [Contractors and the trades](https://heymile.app/for/contractors/): plumbers, electricians, HVAC techs and handymen; job sites, estimates and supply runs
+- [Home health and home care](https://heymile.app/for/home-health-care/): nurses, therapists, aides and caregivers; private log, monthly reports for agencies
+- [Outside sales reps](https://heymile.app/for/sales-reps/): client visits and territory days; monthly report for the expense report
+- [Photographers and event pros](https://heymile.app/for/photographers/): shoots, venues, scouting and gear pickups
+- [Landscaping and lawn care](https://heymile.app/for/landscapers/): a route of properties, the nursery and equipment shop; English or Spanish
+- [Independent couriers](https://heymile.app/for/couriers/): medical, legal and parcel runs for many clients in one log
+- [Insurance adjusters](https://heymile.app/for/insurance-adjusters/): inspections and claim sites, near home or on deployment
+
+## En español
+
+- [HeyMile en español](https://heymile.app/es/)
+- [Para quién es HeyMile](https://heymile.app/es/para/)
+- [Conductores de rideshare](https://heymile.app/es/para/conductores-de-rideshare/)
+- [Repartidores](https://heymile.app/es/para/repartidores/)
+- [Contratistas y oficios](https://heymile.app/es/para/contratistas/)
+- [Salud y cuidado en casa](https://heymile.app/es/para/cuidado-en-casa/)
+- [Jardinería y paisajismo](https://heymile.app/es/para/jardineria/)

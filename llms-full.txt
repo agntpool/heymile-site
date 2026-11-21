@@ -1,0 +1,418 @@
+# HeyMile
+
+> HeyMile ("HeyMile: Mileage Tracker" on the App Store) is a mileage log for iPhone and CarPlay, made for self-employed people, 1099 contractors and small businesses who drive for work. It detects drives and logs the miles automatically, asks "Business or personal?" on the Lock Screen, in a widget and on CarPlay so each drive is answered with one tap, logs trips by voice or typing with Apple Maps, and exports PDF and spreadsheet reports. No account, no ads, no analytics. $0.99 a month, first month free for new subscribers.
+
+Key facts:
+
+- App Store: https://apps.apple.com/app/heymile-mileage-tracker/id6834995051 (App Store ID 6834995051)
+- Platform: iPhone with iOS 26 or later, with CarPlay. Languages: English and Spanish (Spanish App Store name: "HeyMile: Registro de millas").
+- Price: $0.99 a month, auto-renewing, billed through the Apple Account. The first month is free for new subscribers. After cancelling, people can still read and export their records.
+- Automatic tracking: detects drives and logs miles even when the app is closed; can also start a drive when the car connects. A Drive control (Control Center, Lock Screen, Action button) starts or ends a drive by hand.
+- One tap, business or personal: when a drive ends, the Lock Screen (Live Activity), a Home Screen widget and CarPlay ask "Business or personal?". A business drive then gets its purpose, asked on the iPhone.
+- CarPlay: the car's screen shows the drive with two large buttons, Business (blue briefcase) and Personal (green house). After the drive it shows, for example, "Last drive: 22.8 mi" with the same two buttons.
+- Voice and typing: "From the office to 1200 Main St" logs a trip measured with Apple Maps; place names are looked up in Apple Maps. Questions like "How many miles this month?" and edits like "Make Monday's trip personal" work too. Requests are understood with Apple's on-device model; HeyMile asks before it adds, changes or deletes anything. Siri and Spotlight are supported.
+- Reports: PDF or spreadsheet for a month or a year, with each trip's date, route, purpose and miles, plus odometer readings. Reports are generated in English. Dollar figures are estimates using the IRS standard mileage rate.
+- Map: every trip on one map, business in blue and personal in green.
+- Privacy: no account, no ads, no analytics. The log stays on the iPhone and in the user's own iCloud; the developer never sees trips, locations or voice.
+- Not tax advice: HeyMile is a record-keeping tool. Its estimates aren't guaranteed; users should confirm with a tax advisor before filing.
+- Developer: AGNTPOOL, LLC (Texas, USA). Support: support@heymile.app
+
+## Main pages
+
+- [HeyMile home](https://heymile.app/): what HeyMile does, CarPlay, pricing and questions
+- [Who HeyMile is for](https://heymile.app/for/): every kind of driver, with links to each page
+- [Support](https://heymile.app/support/): tracking, voice, widget, CarPlay, reports, subscription and data questions
+- [Privacy Policy](https://heymile.app/privacy/)
+- [Terms of Service](https://heymile.app/terms/)
+- [Full text for AI assistants](https://heymile.app/llms-full.txt)
+
+## HeyMile for each kind of work
+
+- [Rideshare drivers](https://heymile.app/for/rideshare-drivers/): many short drives per shift, often for several apps at once; one log for all of them
+- [Food and grocery delivery drivers](https://heymile.app/for/delivery-drivers/): logs in the background while the delivery app stays on screen; keeps errands apart
+- [Real estate agents](https://heymile.app/for/real-estate-agents/): showings, listings and closings, with the purpose of each drive
+- [Contractors and the trades](https://heymile.app/for/contractors/): plumbers, electricians, HVAC techs and handymen; job sites, estimates and supply runs
+- [Home health and home care](https://heymile.app/for/home-health-care/): nurses, therapists, aides and caregivers; private log, monthly reports for agencies
+- [Outside sales reps](https://heymile.app/for/sales-reps/): client visits and territory days; monthly report for the expense report
+- [Photographers and event pros](https://heymile.app/for/photographers/): shoots, venues, scouting and gear pickups
+- [Landscaping and lawn care](https://heymile.app/for/landscapers/): a route of properties, the nursery and equipment shop; English or Spanish
+- [Independent couriers](https://heymile.app/for/couriers/): medical, legal and parcel runs for many clients in one log
+- [Insurance adjusters](https://heymile.app/for/insurance-adjusters/): inspections and claim sites, near home or on deployment
+
+## En español
+
+- [HeyMile en español](https://heymile.app/es/)
+- [Para quién es HeyMile](https://heymile.app/es/para/)
+- [Conductores de rideshare](https://heymile.app/es/para/conductores-de-rideshare/)
+- [Repartidores](https://heymile.app/es/para/repartidores/)
+- [Contratistas y oficios](https://heymile.app/es/para/contratistas/)
+- [Salud y cuidado en casa](https://heymile.app/es/para/cuidado-en-casa/)
+- [Jardinería y paisajismo](https://heymile.app/es/para/jardineria/)
+
+## Home page questions
+
+Q: How much does HeyMile cost?
+A: $0.99 a month, and the first month is free for new subscribers. It renews each month until you cancel, billed through your Apple Account. If you cancel, you can still read and export your records.
+
+Q: Does HeyMile log drives automatically?
+A: Yes. HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers.
+
+Q: Does HeyMile work with CarPlay?
+A: Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car.
+
+Q: What is in the report?
+A: Every trip with its date, route, purpose and miles, and your odometer readings, exported as a PDF or a spreadsheet for the month or the year.
+
+Q: Do I need an account?
+A: No. HeyMile has no account, no ads and no analytics. Your log lives on your iPhone and in your own iCloud.
+
+Q: Which iPhones does HeyMile run on?
+A: iPhone with iOS 26 or later, in English or Spanish.
+
+Q: Is HeyMile tax advice?
+A: No. HeyMile is a record-keeping tool. Dollar figures are estimates based on your log and the IRS standard mileage rate and aren’t guaranteed. Confirm with your tax advisor before you file.
+
+## Rideshare drivers
+Page: https://heymile.app/for/rideshare-drivers/
+
+To the pickup, the ride, back toward the busy part of town, the long drive home from the airport. Your miles add up all shift. HeyMile logs every drive on its own, and you sort each one with a tap on CarPlay.
+
+### How a rideshare shift adds up
+
+A shift is dozens of short drives: to the pickup, the ride itself, then repositioning toward the next busy area, or the empty drive back from a far-off drop-off. Many drivers run more than one app at a time, so no single company sees the whole shift.
+
+The summary a rideshare company sends at tax time is its record of your work on its platform, counted its way. It won’t include miles you drove for other apps, and it may not match every mile you drove for work. Your own log fills that gap.
+
+### Why your own log matters
+
+The IRS asks for records that show, for each business drive, the date, where you went, the business purpose and the miles, kept at or near the time of the drive. IRS Publication 463 (https://www.irs.gov/publications/p463) explains what counts as an adequate record. Schedule C also asks whether you have written evidence for the vehicle miles you claim.
+
+Which rideshare miles count, such as the drive from home to your first pickup, depends on your situation. A complete log lets you and your tax advisor make that call with the facts in front of you.
+
+### How HeyMile helps
+
+- Every drive, logged on its own. HeyMile detects your drives and logs the miles, even with the app closed. Set it to start a drive when your car connects, and no drive slips by.
+- Answer on CarPlay. Two big buttons on the car’s screen: Business and Personal. Tap one at the curb between rides. There’s nothing to type while you drive.
+- Or on the Lock Screen. When a drive ends, the Lock Screen asks “Business or personal?” One tap, and you’re back in the rideshare app.
+- Add a missed drive by voice. Say “From the airport to downtown” and HeyMile measures the route with Apple Maps, then asks before it logs anything.
+- Reports when you need them. Export the month or the year as a PDF or a spreadsheet, with each trip’s date, route, purpose and miles, and your odometer readings.
+
+### Questions
+
+Q: Does HeyMile connect to my rideshare app?
+A: No. HeyMile doesn’t sign in to any other app or read your earnings. It logs the drives your iPhone detects, and you decide which ones were business.
+
+Q: I drive for more than one app. Do I need more than one log?
+A: No. HeyMile logs the drive, not the app, so the miles from every platform you drive for end up in one log and one report.
+
+Q: Do I have to answer after every ride?
+A: Each drive asks once, on the Lock Screen, in the widget or on CarPlay. If you’re busy, answer later: open HeyMile, or tell it something like “Mark the trip to Main St as business”.
+
+## Food and grocery delivery
+Page: https://heymile.app/for/delivery-drivers/
+
+Restaurant, customer, back to the busy zone, again. Delivery work is many short drives, and HeyMile records each one so you don’t have to remember them at tax time.
+
+### What a delivery shift looks like
+
+Food and grocery delivery means short hops between restaurants, stores and doorsteps, waiting in parking lots, and driving back toward busier areas between orders. A single evening can be twenty drives or more, and a weekend can mix delivery runs with your own errands in the same car.
+
+Few people write down twenty drives a night by hand. Rebuilding them months later from memory and order history is slow, and it leaves gaps.
+
+### Why a log made as you drive matters
+
+A mileage log is most useful when it’s made as you go. The IRS describes adequate records as ones made at or near the time of the drive, showing the date, the place, the business purpose and the miles (IRS Publication 463 (https://www.irs.gov/publications/p463)). A delivery app’s summary covers only its own orders, counted its own way.
+
+Mixed days are where a log earns its keep: the drive to the store for an order is business, the stop for your own groceries isn’t. One tap at the end of each drive keeps them apart.
+
+### How HeyMile helps
+
+- Logs in the background. HeyMile detects drives even when it’s closed, so your delivery app can stay on screen.
+- Business or Personal on CarPlay. Two big buttons on the car’s screen answer each drive with one tap, before you head to the door.
+- A widget that asks for you. On the Home Screen, the widget shows your miles this year and, when a drive is waiting, Business and Personal in one tap.
+- Start a drive yourself. Add the Drive control to Control Center or the Action button to start or end a drive with one press.
+- One report for every app. Export the month or the year as a PDF or a spreadsheet, with business and personal miles kept apart.
+
+### Questions
+
+Q: Will HeyMile keep logging while my delivery app is open?
+A: Yes. HeyMile detects drives in the background, even when it’s closed, so your delivery app can stay on screen.
+
+Q: I deliver for several apps. Do I need separate logs?
+A: No. HeyMile logs your drives, whichever app sent you, so all your delivery miles are in one log and one report.
+
+Q: Can I keep my own errands out of it?
+A: Yes. Every drive is Business or Personal. Personal drives stay in your log, but reports list them apart from your business miles.
+
+## Real estate agents
+Page: https://heymile.app/for/real-estate-agents/
+
+Showings, listing appointments, open houses, inspections, closings. HeyMile logs the drives between them and keeps the purpose with each one.
+
+### Where an agent’s miles go
+
+An agent’s week is drives to properties and clients: showings across town, listing presentations, open houses, inspections and appraisals, the title office, and back to the brokerage. Many agents work as independent contractors and drive their own car, so those miles are a cost of their business.
+
+No two days repeat. One day is three showings in one neighborhood, the next is a listing appointment forty minutes out, which makes a weekly estimate a poor stand-in for a real log.
+
+### Why the purpose matters
+
+The IRS expects each business drive in your records to show its business purpose, along with the date, the place and the miles (IRS Publication 463 (https://www.irs.gov/publications/p463)). For an agent, “Showing, 412 Elm St” or “Listing appointment” is the line that ties a drive to your work. Write it at the time, and the log explains itself later.
+
+### How HeyMile helps
+
+- Business, then the purpose. Tap Business on the Lock Screen and HeyMile asks what the drive was for. One answer, saved with the trip.
+- Log by place name. Say “From the office to the open house on Oak Street”: HeyMile finds the place in Apple Maps, asks if it’s the right one, and measures the miles.
+- Find any trip in Spotlight. Search by place or purpose, such as a street name, to pull up every drive to it.
+- CarPlay between appointments. Business or Personal in one tap on the car’s screen, before you walk into the next showing.
+- Reports by month or year. A PDF or a spreadsheet with each trip’s date, route, purpose and miles, ready for your tax advisor.
+
+### Questions
+
+Q: Can I record which property or client a drive was for?
+A: Yes. Each business drive has a purpose, and you write whatever helps you, such as the address or the kind of appointment. HeyMile can also offer to add the client’s name.
+
+Q: My brokerage asks for mileage. Can I send them a report?
+A: Yes. Export a PDF or a spreadsheet for the month or the year and share it from your iPhone. Nothing is sent unless you send it.
+
+Q: What if I forget to start HeyMile before a showing?
+A: You don’t need to start it: HeyMile detects drives on its own. If a drive was missed, tell HeyMile where you drove, and it adds it after you confirm.
+
+## Contractors and the trades
+Page: https://heymile.app/for/contractors/
+
+Job sites, estimates, the supply house, the next call. If you’re a plumber, electrician, HVAC tech, handyman or general contractor working for yourself, HeyMile logs the drives so you can focus on the work.
+
+### A day of drives between jobs
+
+A service day rarely goes from one address to another and home. There’s the estimate in the morning, the supply-house run for a part, the job, a second trip back for something you didn’t have, then an emergency call across town. Each of those is a drive, and many of them are part of running your business.
+
+Most trucks and vans in the trades also get used for personal driving now and then, which is why keeping business and personal apart matters.
+
+### Why the record matters
+
+A vehicle is one of the bigger costs of running a trade business. Whether you and your tax advisor use the standard mileage rate or actual expenses, the IRS expects records of business use: the date, place, purpose and miles of each business drive, kept at or near the time (IRS Publication 463 (https://www.irs.gov/publications/p463)).
+
+A log built as you go is far easier to stand behind than one rebuilt from invoices at the end of the year.
+
+### How HeyMile helps
+
+- Starts with the truck. Set HeyMile to start a drive when your vehicle connects to your iPhone, or let it detect drives on its own.
+- Big buttons on CarPlay. Business and Personal fill the car’s screen, so one tap answers the drive before you climb out.
+- Name the job. After you tap Business, give the purpose in a few words, like “Supply run, Smith job”, so the report reads clearly.
+- Fix it by voice. Say “From the shop to 1200 Main St” to add a missed drive, or “Make Monday’s trip personal” to fix one. HeyMile asks before it changes anything.
+- A report your tax advisor can use. PDF or spreadsheet, month or year, with odometer readings.
+
+### Questions
+
+Q: Can I log a drive after the fact?
+A: Yes. Tell HeyMile where you drove, and it measures the miles with Apple Maps and asks you to confirm. You can also edit any trip from Trips.
+
+Q: Is the purpose required?
+A: HeyMile asks for a purpose on business drives, because records usually need one. A few words are enough.
+
+Q: Will my crew’s drives be logged too?
+A: HeyMile logs the drives of the iPhone it’s on. Each person who drives for your business uses HeyMile on their own iPhone, with their own log.
+
+## Home health and home care
+Page: https://heymile.app/for/home-health-care/
+
+Visit to visit, all day. Whether you’re a home health nurse, a therapist, an aide or an independent caregiver, HeyMile logs the drives between homes and keeps the log private.
+
+### Driving is part of the job
+
+Home visits mean driving between clients’ homes, to the pharmacy or the office, and sometimes back to the same home twice in one day. Routes change with the schedule, and the drives can take as much time as the visits.
+
+### A log for reimbursement or for taxes
+
+If you work for an agency that reimburses mileage, it will usually want a log with dates, places and miles before it pays. If you’re an independent contractor or run your own care business, business miles may be deductible, and the IRS expects a record made at or near the time of each drive, with its business purpose (IRS Publication 463 (https://www.irs.gov/publications/p463)). Either way, the record has to exist.
+
+Follow your agency’s rules on what goes in a mileage log. Many prefer a general purpose like “Client visit” rather than names or health details.
+
+### How HeyMile helps
+
+- One tap between visits. When you park, the Lock Screen asks “Business or personal?” Answer before you walk in.
+- No starting and stopping. HeyMile detects drives on its own and logs the miles, even with the app closed.
+- Private by design. No account, no ads, no analytics. Your log lives on your iPhone and in your own iCloud, and we never see your trips or where you went.
+- Reports to send. Export the month as a PDF or a spreadsheet for your agency or your tax advisor.
+- In English or Spanish. HeyMile follows your iPhone’s language, typed or spoken.
+
+### Questions
+
+Q: Does HeyMile store client information?
+A: Only what you type into a trip, such as its purpose, and that stays on your iPhone and in your own iCloud. We never see it. Keep purposes general if your agency asks you to.
+
+Q: Can I send my agency a monthly mileage report?
+A: Yes. Open Reports, choose the month, and share the PDF or spreadsheet from your iPhone.
+
+Q: Does HeyMile work in Spanish?
+A: Yes. It follows your iPhone’s language. To use Spanish for HeyMile only, open the iPhone’s Settings, then Apps, HeyMile, Language.
+
+## Outside sales reps
+Page: https://heymile.app/for/sales-reps/
+
+Client visits, territory days, trade shows, sample drop-offs. HeyMile logs the drives, keeps the purpose, and has the month’s report ready when the expense report is due.
+
+### Life in a territory
+
+Outside sales means driving a territory: scheduled calls, drop-in visits, sample deliveries, a trade show two cities over. Some reps are independent, paid on commission and responsible for their own costs. Others are employees reimbursed by the mile.
+
+### Reimbursed or self-employed, the log comes first
+
+Companies that reimburse mileage usually ask for each trip’s date, destination, purpose and miles. Independent reps who deduct business miles need the same details in their records, kept at or near the time (IRS Publication 463 (https://www.irs.gov/publications/p463)).
+
+A log rebuilt at the end of the month from your calendar tends to miss the unplanned stops. A log made as you drive doesn’t.
+
+### How HeyMile helps
+
+- Logs every call. HeyMile detects drives and logs the miles, so the visit you added at the last minute is there too.
+- Purpose in one answer. Tap Business and HeyMile asks what the drive was for. Name the client or the account.
+- Ask your log. “How many miles this month?” or “What trips did I take Monday?” HeyMile answers from your log.
+- Ready for the expense report. Export the month as a PDF or a spreadsheet and attach it.
+- CarPlay in the car. Business or Personal with one tap on the car’s screen, between appointments.
+
+### Questions
+
+Q: Can HeyMile make a monthly report for my expense report?
+A: Yes. Open Reports, choose the month, and export a PDF or a spreadsheet with each trip’s date, route, purpose and miles.
+
+Q: Can I see how many miles I drove this month?
+A: Yes. Ask HeyMile “How many miles this month?”, or open Reports.
+
+Q: Does my company see my log?
+A: No. HeyMile has no account, and nothing is shared unless you export a report and send it yourself.
+
+## Photographers and event pros
+Page: https://heymile.app/for/photographers/
+
+Shoots, venue walkthroughs, location scouting, gear rental pickups. Your work happens somewhere new every week, and HeyMile keeps track of how you got there.
+
+### Work that moves around
+
+Photographers, videographers, DJs, florists and planners drive to wherever the work is: a client consultation, a venue walkthrough, a scouting trip for the right light, the rental house for a lens, then the event itself, often on a weekend and often far from home.
+
+Because the schedule is irregular and work days look like weekends, it’s easy to forget which drives were for work by the time you sit down with your books.
+
+### Write it down when it happens
+
+The IRS describes good records as ones made at or near the time of the drive, with the date, destination, business purpose and miles (IRS Publication 463 (https://www.irs.gov/publications/p463)). For a creative business, the purpose is often what makes a drive clearly business: “Venue walkthrough for the June wedding.”
+
+### How HeyMile helps
+
+- Nothing to remember. HeyMile detects drives and logs the miles, so the scouting drive on a Sunday is in the log.
+- Business, then the purpose. One tap on the Lock Screen, then a few words about the job.
+- Name the place. Say “From the studio to the botanical garden”: HeyMile finds it in Apple Maps, asks if it’s the right one, and measures the miles.
+- Find every trip to a venue. Search Spotlight by place or purpose.
+- See the year. Every trip on one map, business in blue and personal in green, and a report as a PDF or a spreadsheet.
+
+### Questions
+
+Q: Can I add a drive HeyMile missed?
+A: Yes. Tell HeyMile where you drove; it measures the miles with Apple Maps and asks before it logs anything. You can also edit any trip from Trips.
+
+Q: Do I need to start HeyMile before a shoot?
+A: No. HeyMile detects drives on its own. If you want to be sure, start a drive from the Drive control in Control Center or with the Action button.
+
+Q: What does my tax advisor get?
+A: A PDF or a spreadsheet for the month or the year, with each trip’s date, route, purpose and miles, and your odometer readings.
+
+## Landscaping and lawn care
+Page: https://heymile.app/for/landscapers/
+
+A route of yards, the nursery, the equipment shop, the green-waste drop-off. HeyMile logs every drive between them, in English or Spanish.
+
+### A route, every day
+
+Landscaping and lawn care run on routes: a string of properties on the same day each week, plus estimates for new clients, the nursery or the landscape supply yard, small-engine repair, and runs to drop off green waste. Busy months mean long days, and the slow season brings different work and different drives.
+
+### Short drives add up
+
+Each stop on a route is a short drive, and short drives are the easiest to forget. Over a season they add up to a lot of miles. The IRS expects a record of each business drive, with its date, place, purpose and miles, kept at or near the time (IRS Publication 463 (https://www.irs.gov/publications/p463)). HeyMile makes that record at every stop.
+
+### How HeyMile helps
+
+- Every stop, logged. HeyMile detects each drive and logs the miles, even with the app closed. Or have it start when your truck connects.
+- CarPlay in the truck. Business or Personal with one tap on the car’s screen, before you unload.
+- In English or Spanish. HeyMile follows your iPhone’s language, typed or spoken, so everyone on your team can use it in the language they prefer.
+- A purpose in a few words. Something like “Weekly route” or “Estimate, new client” is enough.
+- Reports at the end of the season. PDF or spreadsheet, month or year.
+
+### Questions
+
+Q: Does HeyMile work in Spanish?
+A: Yes. HeyMile follows your iPhone’s language, typed or spoken. To use Spanish for HeyMile only, open the iPhone’s Settings, then Apps, HeyMile, Language. Reports are in English.
+
+Q: Several of us drive for the business. How does that work?
+A: HeyMile logs the drives of the iPhone it’s on. Each driver uses HeyMile on their own iPhone, with their own log and their own report.
+
+Q: Can I change a drive to personal later?
+A: Yes. Tell HeyMile “Make Monday’s trip personal”, or open the trip in Trips and change it.
+
+## Independent couriers
+Page: https://heymile.app/for/couriers/
+
+Lab pickups, legal filings, parcels, same-day runs for local businesses. If you’re a courier driving your own vehicle as a contractor, HeyMile logs the miles while you work.
+
+### Long days, many clients
+
+Independent couriers often work for several dispatchers or brokers, or directly for local businesses: a lab pickup in the morning, a court filing at noon, a parcel route in the afternoon. The miles are long, and the paperwork comes from many places, each covering only its own jobs.
+
+### One log for all of it
+
+As a contractor using your own vehicle, your mileage log is your record, not any one client’s. The IRS expects it to show each business drive’s date, destination, purpose and miles, kept at or near the time (IRS Publication 463 (https://www.irs.gov/publications/p463)), and Schedule C asks whether you have written evidence for the miles you claim.
+
+A single log across every client is simpler to keep, and simpler to hand to your tax advisor.
+
+### How HeyMile helps
+
+- Long days, logged. HeyMile detects every drive and logs the miles, even with the app closed.
+- One tap on CarPlay. Business or Personal on the car’s screen, at each stop.
+- Note the client. After Business, a few words of purpose, like the client or the run, keep the log readable.
+- Ask your log. “How many miles this month?” HeyMile answers from your log.
+- Monthly reports. Export a PDF or a spreadsheet and see every trip of the year on one map.
+
+### Questions
+
+Q: Can I keep one log for every client I drive for?
+A: Yes. HeyMile logs your drives, not your clients’ jobs, so every run goes into one log. The purpose of each drive can name the client.
+
+Q: What if my phone missed a drive?
+A: Tell HeyMile where you drove, for example “From the lab to 400 Oak Ave”. It measures the miles with Apple Maps and asks you to confirm.
+
+Q: Can I get a report for just one month?
+A: Yes. In Reports, choose the month or the year, then view or share the PDF or spreadsheet.
+
+## Insurance adjusters
+Page: https://heymile.app/for/insurance-adjusters/
+
+Inspections, claim sites, re-inspections, the office. Whether you’re an independent adjuster on deployment or a field adjuster close to home, HeyMile logs the drives and keeps the purpose with each one.
+
+### Where the claims are
+
+Field work goes wherever the losses are: a roof inspection in the morning, a vehicle at a body shop after lunch, a re-inspection across the county. After a storm, independent adjusters may work far from home for weeks, driving unfamiliar roads between dozens of properties.
+
+### Records you can stand behind
+
+Adjusters know the value of documentation. The IRS expects the same of a mileage log: each business drive’s date, destination, purpose and miles, kept at or near the time (IRS Publication 463 (https://www.irs.gov/publications/p463)). Whether your miles are reimbursed by a firm or claimed on your own return, the log should be complete.
+
+### How HeyMile helps
+
+- Every inspection drive. HeyMile detects drives and logs the miles, wherever you take your iPhone.
+- A purpose for each. Tap Business, then note the inspection in a few words your firm allows.
+- Log by address. Say “From the hotel to 2200 Ridge Road”: HeyMile measures the miles with Apple Maps and asks before logging.
+- Find trips fast. Search Spotlight by place or purpose to find every drive to a property.
+- Reports and a map. Export the month as a PDF or a spreadsheet, and see every trip on one map.
+
+### Questions
+
+Q: Can I note the claim for each drive?
+A: Yes, as the drive’s purpose. Keep it to what your firm allows in a mileage log.
+
+Q: Does HeyMile work when I’m deployed away from home?
+A: Yes. HeyMile logs drives wherever you take your iPhone, and your log stays on it and in your own iCloud.
+
+Q: Can I send a report to the firm?
+A: Yes. Export the month or the year as a PDF or a spreadsheet and share it from your iPhone.
+
+---
+HeyMile is a record-keeping tool. Dollar figures in HeyMile are estimates based on the user’s log and the IRS standard mileage rate, and they aren’t guaranteed. HeyMile isn’t tax advice; confirm with a tax advisor before filing.

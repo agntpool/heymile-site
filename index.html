@@ -5,22 +5,114 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>HeyMile — Every mile. Less effort.</title>
-<meta name="description" content="Mileage tracking for iPhone, for the self-employed and small businesses. Say where you drove, or let HeyMile log the drive itself. Reports ready for your tax advisor.">
+<title>HeyMile: Mileage Tracker for iPhone and CarPlay</title>
+<meta name="description" content="HeyMile logs your drives automatically and asks “Business or personal?” on your Lock Screen and CarPlay. Voice logging, tax-ready reports. First month free, then $0.99 a month.">
 <meta name="color-scheme" content="light dark">
+<meta name="apple-itunes-app" content="app-id=6834995051">
 <link rel="canonical" href="https://heymile.app/">
+<link rel="alternate" hreflang="en" href="https://heymile.app/">
+<link rel="alternate" hreflang="es" href="https://heymile.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://heymile.app/">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0d0d0f" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HeyMile">
-<meta property="og:title" content="HeyMile — Every mile. Less effort.">
-<meta property="og:description" content="Intelligent mileage tracking for iPhone.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:title" content="HeyMile: Mileage Tracker for iPhone and CarPlay">
+<meta property="og:description" content="Drives logged automatically. Business or personal in one tap, on your Lock Screen and CarPlay. First month free.">
 <meta property="og:url" content="https://heymile.app/">
-<meta property="og:image" content="https://heymile.app/og.png">
+<meta property="og:image" content="https://heymile.app/og-carplay.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HeyMile on a CarPlay screen: Last drive: 22.8 mi, with two buttons, Business and Personal, over a map of routes.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HeyMile: Mileage Tracker for iPhone and CarPlay">
+<meta name="twitter:description" content="Drives logged automatically. Business or personal in one tap, on your Lock Screen and CarPlay. First month free.">
+<meta name="twitter:image" content="https://heymile.app/og-carplay.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://heymile.app/#org",
+      "name": "AGNTPOOL, LLC",
+      "url": "https://heymile.app/",
+      "logo": "https://heymile.app/apple-touch-icon.png",
+      "email": "support@heymile.app",
+      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" },
+      "brand": { "@type": "Brand", "name": "HeyMile" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://heymile.app/#site",
+      "name": "HeyMile",
+      "url": "https://heymile.app/",
+      "inLanguage": ["en", "es"],
+      "publisher": { "@id": "https://heymile.app/#org" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://heymile.app/#app",
+      "name": "HeyMile: Mileage Tracker",
+      "alternateName": "HeyMile",
+      "description": "A mileage log for iPhone for self-employed and small-business drivers. It detects drives and logs the miles, asks “Business or personal?” on the Lock Screen, in a widget and on CarPlay, logs trips by voice with Apple Maps, and exports PDF and spreadsheet reports. No account, ads or analytics.",
+      "operatingSystem": "iOS 26 or later",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "Mileage log",
+      "availableOnDevice": "iPhone",
+      "inLanguage": ["en", "es"],
+      "url": "https://heymile.app/",
+      "downloadUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
+      "installUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
+      "sameAs": ["https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"],
+      "image": "https://heymile.app/og-carplay.jpg",
+      "screenshot": ["https://heymile.app/screens/carplay-routes-2400.jpg", "https://heymile.app/screens/home-v3.jpg", "https://heymile.app/screens/reports-v3.jpg"],
+      "featureList": ["Automatic drive detection", "Business or personal in one tap on the Lock Screen", "CarPlay with Business and Personal buttons", "Home Screen widget and Drive control", "Voice and typed trip logging with Apple Maps", "PDF and spreadsheet reports", "Map of every trip", "English and Spanish", "No account, ads or analytics"],
+      "publisher": { "@id": "https://heymile.app/#org" },
+      "author": { "@id": "https://heymile.app/#org" },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "HeyMile Monthly",
+          "price": "0.99",
+          "priceCurrency": "USD",
+          "priceSpecification": { "@type": "UnitPriceSpecification", "price": "0.99", "priceCurrency": "USD", "billingDuration": "P1M", "unitText": "month" },
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
+        },
+        {
+          "@type": "Offer",
+          "name": "First month free",
+          "description": "The first month is free for new subscribers, then $0.99 a month until cancelled.",
+          "price": "0",
+          "priceCurrency": "USD",
+          "eligibleDuration": { "@type": "QuantitativeValue", "value": 1, "unitCode": "MON" },
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://heymile.app/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "How much does HeyMile cost?", "acceptedAnswer": { "@type": "Answer", "text": "$0.99 a month, and the first month is free for new subscribers. It renews each month until you cancel, billed through your Apple Account. If you cancel, you can still read and export your records." } },
+        { "@type": "Question", "name": "Does HeyMile log drives automatically?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers." } },
+        { "@type": "Question", "name": "Does HeyMile work with CarPlay?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car." } },
+        { "@type": "Question", "name": "What is in the report?", "acceptedAnswer": { "@type": "Answer", "text": "Every trip with its date, route, purpose and miles, and your odometer readings, exported as a PDF or a spreadsheet for the month or the year." } },
+        { "@type": "Question", "name": "Do I need an account?", "acceptedAnswer": { "@type": "Answer", "text": "No. HeyMile has no account, no ads and no analytics. Your log lives on your iPhone and in your own iCloud." } },
+        { "@type": "Question", "name": "Which iPhones does HeyMile run on?", "acceptedAnswer": { "@type": "Answer", "text": "iPhone with iOS 26 or later, in English or Spanish." } },
+        { "@type": "Question", "name": "Is HeyMile tax advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. HeyMile is a record-keeping tool. Dollar figures are estimates based on your log and the IRS standard mileage rate and aren’t guaranteed. Confirm with your tax advisor before you file." } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body class="home">
 <a class="skip" href="#content">Skip to content</a>
@@ -28,7 +120,11 @@
 <header class="top">
   <nav aria-label="Site">
     <a class="brand" href="/">HeyMile.</a>
-    <a href="/support">Support</a>
+    <span class="links">
+      <a href="/for/">Who it’s for</a>
+      <a href="/es/" hreflang="es" lang="es">Español</a>
+      <a href="/support/">Support</a>
+    </span>
   </nav>
 </header>
 
@@ -53,24 +149,63 @@
       <span>Every mile.</span>
       <span class="quiet">Less effort.</span>
     </h1>
-    <p class="lede">Intelligent mileage tracking for iPhone.</p>
-    <p class="soon">Coming soon to the App Store</p>
+    <p class="lede">The mileage tracker for iPhone and CarPlay.</p>
+    <div class="cta">
+      <a class="button" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">Try it free</a>
+      <a class="badge" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"><img src="/badges/app-store-en.svg" width="150" height="50" alt="Download on the App Store"></a>
+    </div>
+    <p class="cta-note">First month free, then $0.99 a month. For iPhone.</p>
     <figure class="phone">
       <picture><source srcset="/screens/home-dark-v3.jpg" media="(prefers-color-scheme: dark)"><img src="/screens/home-v3.jpg" width="657" height="1428" alt="HeyMile’s first screen: tracking is on, 2,358.3 miles logged this year across 137 trips, the latest trip, Meeting with a client, and a large microphone button."></picture>
     </figure>
   </section>
 
+  <section class="carplay-feature reveal" id="carplay">
+    <div class="intro">
+      <p class="eyebrow">CarPlay</p>
+      <h2>On your dashboard, too.</h2>
+      <p>Two big buttons on your car’s screen: Business or Personal, one tap. Answer the drive before you leave the car.</p>
+    </div>
+
+    <figure class="carplay-shot">
+      <picture>
+        <source srcset="/screens/carplay-dark.jpg" width="1200" height="909" media="(prefers-color-scheme: dark)">
+        <source srcset="/screens/carplay-routes-phone.jpg" width="1200" height="857" media="(max-width: 1100px)">
+        <img src="/screens/carplay-routes-2400.jpg" srcset="/screens/carplay-routes-1400.jpg 1400w, /screens/carplay-routes-2400.jpg 2400w" sizes="(max-width: 1248px) 100vw, 1200px" width="2400" height="1029" alt="HeyMile on a CarPlay screen after a drive. The title reads Last drive: 22.8 mi, with two large buttons below it: Business, a blue briefcase, and Personal, a green house.">
+      </picture>
+    </figure>
+
+    <div class="carplay-pair">
+      <figure class="car-frame">
+        <img src="/screens/carplay-driving.jpg" width="1480" height="888" loading="lazy" decoding="async" alt="A screen capture of HeyMile in the CarPlay Simulator as a drive begins: Driving · 0 mi, with Business and Personal buttons.">
+      </figure>
+      <div>
+        <h3>While you drive</h3>
+        <p>The car’s screen shows the drive and its miles, with Business and Personal waiting. Nothing to type.</p>
+        <h3>When you park</h3>
+        <p>“Last drive: 22.8 mi.” One tap files it. Pick Business and HeyMile asks what it was for on your iPhone.</p>
+        <h3>And on your iPhone</h3>
+        <p>The same question waits on the Lock Screen and in the widget, so a drive is never left unanswered.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="statement reveal">
     <h2>For anyone who drives for work.</h2>
     <p>If you’re self-employed or run a small business, the miles you drive for work may be deductible, but only if there’s a record. HeyMile keeps that record for you.</p>
-    <ul class="trades" aria-label="For example">
-      <li>Real estate</li>
-      <li>Contracting</li>
-      <li>Sales</li>
-      <li>Consulting</li>
-      <li>Home care</li>
-      <li>Freelance</li>
+    <ul class="trades" aria-label="Who HeyMile is for">
+      <li><a href="/for/rideshare-drivers/">Rideshare</a></li>
+      <li><a href="/for/delivery-drivers/">Delivery</a></li>
+      <li><a href="/for/real-estate-agents/">Real estate</a></li>
+      <li><a href="/for/contractors/">Contracting</a></li>
+      <li><a href="/for/home-health-care/">Home care</a></li>
+      <li><a href="/for/sales-reps/">Sales</a></li>
+      <li><a href="/for/photographers/">Photography</a></li>
+      <li><a href="/for/landscapers/">Landscaping</a></li>
+      <li><a href="/for/couriers/">Couriers</a></li>
+      <li><a href="/for/insurance-adjusters/">Adjusting</a></li>
     </ul>
+    <p class="more"><a href="/for/">See how HeyMile fits your work</a></p>
   </section>
 
   <section class="band loop">
@@ -216,59 +351,6 @@
     </div>
   </section>
 
-
-  <section class="carplay reveal" id="carplay">
-    <div class="intro">
-      <p class="eyebrow">CarPlay</p>
-      <h2>On your dashboard, too.</h2>
-      <p>Two big buttons on your car’s screen: Business or Personal, one tap.</p>
-    </div>
-
-    <!-- A drawing of the planned CarPlay screen, with the same drive live on the iPhone. -->
-    <div class="dash" role="img" aria-label="An illustration of HeyMile on a car’s screen. The title reads Driving and the miles count. Below are two large buttons: Business, a blue briefcase, and Personal, a green house. A tap on Business changes the title to Business and turns Personal grey. Below it, the same drive counts on the iPhone’s Lock Screen.">
-      <div class="car-screen" aria-hidden="true">
-        <div class="car-inner">
-        <div class="car-dock">
-          <span class="car-time">9:41</span>
-          <i class="on"></i><i></i><i></i>
-        </div>
-        <div class="car-main">
-          <p class="car-title"><span class="car-answer"><span class="ask">Driving · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span><span class="answered">Business · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span></span></p>
-          <div class="car-tiles">
-            <span class="car-tile business tapped">
-              <img class="sf" src="/icons/briefcase-blue.png" alt="" aria-hidden="true">
-              Business
-            </span>
-            <span class="car-tile personal">
-              <img class="sf" src="/icons/house-green.png" alt="" aria-hidden="true">
-              Personal
-            </span>
-          </div>
-        </div>
-        </div>
-      </div>
-
-      <div class="live-card car-phone" aria-hidden="true">
-        <div class="live-row">
-          <span class="live-title blue">
-            <img class="sf glyph" src="/icons/car-blue.png" alt="" aria-hidden="true">
-            Driving <span class="live-since">Since 9:36 AM</span>
-          </span>
-          <span class="live-miles">
-            <span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span><small>mi</small>
-          </span>
-        </div>
-        <div class="live-buttons two">
-          <span class="live-button">Business</span>
-          <span class="live-button personal">Personal</span>
-        </div>
-      </div>
-      <p class="car-caption">The same drive, live on your iPhone.</p>
-    </div>
-
-    <p class="note">Illustration of HeyMile on CarPlay.</p>
-  </section>
-
   <section class="statement reveal">
     <h2>Right where you need it.</h2>
     <ul class="tiles">
@@ -299,22 +381,65 @@
     <p class="eyebrow">Privacy</p>
     <h2>No account. Your log stays yours.</h2>
     <p>Your log lives on your iPhone and in your own iCloud. We never see your trips, your location or your voice.</p>
-    <p><a href="/privacy">Read the privacy policy</a></p>
+    <p><a href="/privacy/">Read the privacy policy</a></p>
   </section>
 
-  <section class="statement price reveal">
+  <section class="faq reveal" id="questions">
+    <h2>Questions.</h2>
+    <dl>
+      <dt>How much does HeyMile cost?</dt>
+      <dd>$0.99 a month, and the first month is free for new subscribers. It renews each month until you cancel, billed through your Apple Account. If you cancel, you can still read and export your records.</dd>
+      <dt>Does HeyMile log drives automatically?</dt>
+      <dd>Yes. HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers.</dd>
+      <dt>Does HeyMile work with CarPlay?</dt>
+      <dd>Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car.</dd>
+      <dt>What is in the report?</dt>
+      <dd>Every trip with its date, route, purpose and miles, and your odometer readings, exported as a PDF or a spreadsheet for the month or the year.</dd>
+      <dt>Do I need an account?</dt>
+      <dd>No. HeyMile has no account, no ads and no analytics. Your log lives on your iPhone and in your own iCloud.</dd>
+      <dt>Which iPhones does HeyMile run on?</dt>
+      <dd>iPhone with iOS 26 or later, in English or Spanish.</dd>
+      <dt>Is HeyMile tax advice?</dt>
+      <dd>No. HeyMile is a record-keeping tool. Dollar figures are estimates based on your log and the IRS standard mileage rate and aren’t guaranteed. Confirm with your tax advisor before you file.</dd>
+    </dl>
+    <p class="more"><a href="/support/">More answers in Support</a></p>
+  </section>
+
+  <section class="statement price reveal" id="get">
     <h2>$0.99 a month.</h2>
     <p>First month free. Cancel any time, and your records stay yours.</p>
+    <div class="cta">
+      <a class="button" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">Try it free</a>
+      <a class="badge" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"><img src="/badges/app-store-en.svg" width="150" height="50" alt="Download on the App Store"></a>
+    </div>
   </section>
 
 </main>
 
 <footer class="foot">
+  <nav class="for" aria-label="Who HeyMile is for">
+    <p class="foot-title"><a href="/for/">Mileage logs for</a></p>
+    <ul>
+      <li><a href="/for/rideshare-drivers/">Rideshare drivers</a></li>
+      <li><a href="/for/delivery-drivers/">Delivery drivers</a></li>
+      <li><a href="/for/real-estate-agents/">Real estate agents</a></li>
+      <li><a href="/for/contractors/">Contractors and trades</a></li>
+      <li><a href="/for/home-health-care/">Home health and home care</a></li>
+      <li><a href="/for/sales-reps/">Sales reps</a></li>
+      <li><a href="/for/photographers/">Photographers and event pros</a></li>
+      <li><a href="/for/landscapers/">Landscaping and lawn care</a></li>
+      <li><a href="/for/couriers/">Couriers</a></li>
+      <li><a href="/for/insurance-adjusters/">Insurance adjusters</a></li>
+    </ul>
+  </nav>
   <nav aria-label="Footer">
     <ul>
-      <li><a href="/privacy">Privacy</a></li>
-      <li><a href="/terms">Terms</a></li>
-      <li><a href="/support">Support</a></li>
+      <li><a href="/">HeyMile</a></li>
+      <li><a href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">App Store</a></li>
+      <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms</a></li>
+      <li><a href="/support/">Support</a></li>
     </ul>
   </nav>
   <p class="fine">Dollar figures in HeyMile are estimates based on your log and the IRS standard mileage rate. They aren’t guaranteed, and HeyMile isn’t tax advice; confirm with your tax advisor before you file. The subscription is billed through your Apple Account.</p>

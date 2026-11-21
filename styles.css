@@ -1537,3 +1537,478 @@ h1, h2 { text-wrap: balance; }
   background: var(--lc-green-bg);
   color: var(--lc-green);
 }
+
+/* ---------- Getting the app ---------- */
+
+:root {
+  --button: #0071e3;
+  --button-hover: #0077ed;
+}
+
+/* "Try it free", then Apple's badge. */
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 10px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 30px;
+  border-radius: 999px;
+  background: var(--button);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background: var(--button-hover);
+  text-decoration: none;
+}
+
+a.button:focus-visible {
+  border-radius: 999px;
+}
+
+/* Apple's "Download on the App Store" badge, as Apple supplies it: never
+   altered, at least 40 px tall, with a quarter of its height kept clear on
+   every side. */
+.badge {
+  display: inline-block;
+  padding: 13px;
+  line-height: 0;
+}
+
+.badge img {
+  display: block;
+  width: 150px;
+  height: 50px;
+}
+
+a.badge:focus-visible {
+  border-radius: 14px;
+}
+
+.home .cta-note,
+.cta-note {
+  margin: 2px 0 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--soft);
+}
+
+.hero .cta {
+  animation: arrive 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.6s both;
+}
+
+.hero .cta-note {
+  animation: arrive 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.7s both;
+}
+
+/* The top bar's links, to the right of the name. */
+.top .links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ---------- CarPlay, near the top of the home page ---------- */
+
+.home .carplay-feature {
+  padding-top: clamp(56px, 8vw, 104px);
+  text-align: center;
+}
+
+.carplay-feature .intro {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.home .carplay-feature .intro p:last-child {
+  margin-top: 20px;
+  font-size: clamp(19px, 2vw, 21px);
+  line-height: 1.45;
+  color: var(--soft);
+}
+
+/* The App Store header: CarPlay over real routes. In dark mode, the same
+   screen from the dark App Store screenshot. */
+.carplay-shot {
+  max-width: 1200px;
+  margin: clamp(36px, 5vw, 56px) auto 0;
+}
+
+.carplay-shot picture,
+.carplay-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.carplay-shot img {
+  border-radius: clamp(18px, 3vw, 36px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .carplay-shot {
+    max-width: 860px;
+  }
+}
+
+.shot-caption,
+.home .shot-caption {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--soft);
+}
+
+/* A real CarPlay capture in a car's frame, beside what it does. */
+.carplay-pair {
+  display: grid;
+  gap: 28px;
+  max-width: 1040px;
+  margin: clamp(48px, 7vw, 80px) auto 0;
+  text-align: left;
+}
+
+.car-frame {
+  margin: 0;
+}
+
+.car-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 8px solid #1b1b1d;
+  border-radius: 28px;
+  box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.45);
+}
+
+.home .carplay-pair h3 {
+  margin: 0;
+}
+
+.home .carplay-pair h3 + p {
+  margin-top: 6px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--soft);
+}
+
+.home .carplay-pair p + h3 {
+  margin-top: 24px;
+}
+
+@media (min-width: 820px) {
+  .carplay-pair {
+    grid-template-columns: 1.15fr 1fr;
+    align-items: center;
+    gap: 56px;
+  }
+}
+
+@media (max-width: 560px) {
+  .car-frame img {
+    border-width: 6px;
+    border-radius: 22px;
+  }
+}
+
+/* Who it's for: the chips link to a page for each kind of work. */
+.trades a {
+  color: inherit;
+}
+
+.trades li:has(a):hover {
+  background: color-mix(in srgb, var(--fill) 80%, var(--ink) 8%);
+}
+
+.home .more {
+  margin-top: 28px;
+  font-size: 17px;
+}
+
+/* A short list of questions on the home page. */
+.home .faq {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.home .faq h2 {
+  text-align: center;
+}
+
+.home .faq dl {
+  margin: 40px 0 0;
+}
+
+.home .faq dt {
+  margin-top: 28px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.home .faq dd {
+  margin: 6px 0 0;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--soft);
+}
+
+/* ---------- Footer links to every page ---------- */
+
+.foot .foot-title {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--soft);
+}
+
+.foot .foot-title a {
+  padding: 0;
+}
+
+.foot .for {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.foot .for ul {
+  gap: 2px 18px;
+  font-size: 13px;
+}
+
+/* ---------- Pages for each kind of driver ---------- */
+
+.page .kicker {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--link);
+}
+
+.page .kicker a {
+  color: inherit;
+}
+
+.page .cta {
+  justify-content: flex-start;
+  margin: 28px 0 0;
+}
+
+.page .cta-note {
+  margin: 0;
+}
+
+.page figure {
+  margin: 40px 0 0;
+}
+
+.page .carplay-shot {
+  margin-top: 44px;
+}
+
+.page .carplay-shot img {
+  border-radius: 20px;
+}
+
+.page .lock-figure {
+  margin: 28px 0 8px;
+}
+
+.page .lock-figure .live-card {
+  width: min(400px, 100%);
+}
+
+/* A drive card that stays put, for a page that only needs one moment. */
+.live-card.still {
+  opacity: 1;
+  animation: none;
+  padding: 18px 20px;
+}
+
+.live-card.still .live-title {
+  font-size: 17px;
+}
+
+.live-card.still .live-miles {
+  font-size: 34px;
+}
+
+.page .live-card p {
+  margin: 10px 0 0;
+}
+
+.page .points {
+  padding: 0;
+  list-style: none;
+}
+
+.page .points li {
+  margin: 0 0 14px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.page .points li img {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+}
+
+.page .faq h3 {
+  margin-top: 24px;
+}
+
+.page .cta-box {
+  margin: 56px 0 0;
+  padding: 32px 24px 22px;
+  border-radius: 24px;
+  background: var(--fill);
+  text-align: center;
+}
+
+.page .cta-box h2 {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 30px);
+  letter-spacing: -0.02em;
+}
+
+.page .cta-box p {
+  margin: 8px 0 0;
+  color: var(--soft);
+}
+
+.page .cta-box .cta {
+  justify-content: center;
+  margin: 14px 0 0;
+}
+
+.page .related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page .related li {
+  margin: 0;
+}
+
+.page .related a {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--fill);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.page .related a:hover {
+  text-decoration: none;
+  color: var(--link);
+}
+
+.page .fine {
+  margin-top: 40px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--soft);
+}
+
+/* The page listing every kind of driver. */
+.page .cards {
+  display: grid;
+  gap: 14px;
+  margin: 36px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page .cards li {
+  margin: 0;
+}
+
+.page .cards a {
+  display: block;
+  height: 100%;
+  padding: 20px 22px;
+  border-radius: 20px;
+  background: var(--fill);
+  color: var(--ink);
+}
+
+.page .cards a:hover {
+  text-decoration: none;
+}
+
+.page .cards a:hover strong {
+  color: var(--link);
+}
+
+.page .cards strong {
+  display: block;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+}
+
+.page .cards span {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--soft);
+}
+
+@media (min-width: 640px) {
+  .page .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .cta,
+  .hero .cta-note {
+    animation: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .top nav {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .top .links {
+    gap: 12px;
+  }
+}
+
+/* On a narrow phone the button and the badge still sit side by side; the
+   badge's own padding keeps its clear space. */
+@media (max-width: 400px) {
+  .button {
+    padding: 0 22px;
+  }
+
+  .cta {
+    gap: 4px;
+  }
+}
