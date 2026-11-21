@@ -6,7 +6,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>HeyMile: Mileage Tracker for iPhone and CarPlay</title>
-<meta name="description" content="HeyMile logs your drives automatically and asks “Business or personal?” on your Lock Screen and CarPlay. Voice logging, tax-ready reports. First month free, then $0.99 a month.">
+<meta name="description" content="Mileage tracker for iPhone and CarPlay: drives logged automatically, Business or Personal in one tap, tax-ready reports. First month free, then $0.99/mo.">
 <meta name="color-scheme" content="light dark">
 <meta name="apple-itunes-app" content="app-id=6834995051">
 <link rel="canonical" href="https://heymile.app/">
@@ -35,83 +35,214 @@
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://heymile.app/#org",
+   "name": "AGNTPOOL, LLC",
+   "url": "https://heymile.app/",
+   "logo": "https://heymile.app/apple-touch-icon.png",
+   "email": "support@heymile.app",
+   "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+   },
+   "brand": {
+    "@type": "Brand",
+    "name": "HeyMile"
+   },
+   "legalName": "AGNTPOOL, LLC",
+   "alternateName": "AGNTPOOL LLC",
+   "sameAs": [
+    "https://apps.apple.com/us/developer/agntpool-llc/id6816315232"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://heymile.app/#site",
+   "name": "HeyMile",
+   "url": "https://heymile.app/",
+   "inLanguage": [
+    "en",
+    "es"
+   ],
+   "publisher": {
+    "@id": "https://heymile.app/#org"
+   }
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://heymile.app/#app",
+   "name": "HeyMile: Mileage Tracker",
+   "alternateName": [
+    "HeyMile",
+    "HeyMile: Registro de millas"
+   ],
+   "description": "A mileage log for iPhone for self-employed and small-business drivers. It detects drives and logs the miles, asks “Business or personal?” on the Lock Screen, in a widget and on CarPlay, logs trips by voice with Apple Maps, and exports PDF and spreadsheet reports. No account, ads or analytics.",
+   "operatingSystem": "iOS 26 or later",
+   "applicationCategory": "FinanceApplication",
+   "applicationSubCategory": "Mileage log",
+   "availableOnDevice": "iPhone",
+   "inLanguage": [
+    "en",
+    "es"
+   ],
+   "url": "https://heymile.app/",
+   "downloadUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
+   "installUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
+   "sameAs": [
+    "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
+   ],
+   "image": "https://heymile.app/og-carplay.jpg",
+   "screenshot": [
+    "https://heymile.app/screens/carplay-routes-2400.jpg",
+    "https://heymile.app/screens/home-v3.jpg",
+    "https://heymile.app/screens/reports-v3.jpg"
+   ],
+   "featureList": [
+    "Automatic drive detection",
+    "Business or personal in one tap on the Lock Screen",
+    "CarPlay with Business and Personal buttons",
+    "Home Screen widget and Drive control",
+    "Voice and typed trip logging with Apple Maps",
+    "PDF and spreadsheet reports",
+    "Map of every trip",
+    "English and Spanish",
+    "No account, ads or analytics"
+   ],
+   "publisher": {
+    "@id": "https://heymile.app/#org"
+   },
+   "author": {
+    "@id": "https://heymile.app/#org"
+   },
+   "offers": [
     {
-      "@type": "Organization",
-      "@id": "https://heymile.app/#org",
-      "name": "AGNTPOOL, LLC",
-      "url": "https://heymile.app/",
-      "logo": "https://heymile.app/apple-touch-icon.png",
-      "email": "support@heymile.app",
-      "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" },
-      "brand": { "@type": "Brand", "name": "HeyMile" }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://heymile.app/#site",
-      "name": "HeyMile",
-      "url": "https://heymile.app/",
-      "inLanguage": ["en", "es"],
-      "publisher": { "@id": "https://heymile.app/#org" }
-    },
-    {
-      "@type": "MobileApplication",
-      "@id": "https://heymile.app/#app",
-      "name": "HeyMile: Mileage Tracker",
-      "alternateName": "HeyMile",
-      "description": "A mileage log for iPhone for self-employed and small-business drivers. It detects drives and logs the miles, asks “Business or personal?” on the Lock Screen, in a widget and on CarPlay, logs trips by voice with Apple Maps, and exports PDF and spreadsheet reports. No account, ads or analytics.",
-      "operatingSystem": "iOS 26 or later",
-      "applicationCategory": "FinanceApplication",
-      "applicationSubCategory": "Mileage log",
-      "availableOnDevice": "iPhone",
-      "inLanguage": ["en", "es"],
-      "url": "https://heymile.app/",
-      "downloadUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
-      "installUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
-      "sameAs": ["https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"],
-      "image": "https://heymile.app/og-carplay.jpg",
-      "screenshot": ["https://heymile.app/screens/carplay-routes-2400.jpg", "https://heymile.app/screens/home-v3.jpg", "https://heymile.app/screens/reports-v3.jpg"],
-      "featureList": ["Automatic drive detection", "Business or personal in one tap on the Lock Screen", "CarPlay with Business and Personal buttons", "Home Screen widget and Drive control", "Voice and typed trip logging with Apple Maps", "PDF and spreadsheet reports", "Map of every trip", "English and Spanish", "No account, ads or analytics"],
-      "publisher": { "@id": "https://heymile.app/#org" },
-      "author": { "@id": "https://heymile.app/#org" },
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "HeyMile Monthly",
-          "price": "0.99",
-          "priceCurrency": "USD",
-          "priceSpecification": { "@type": "UnitPriceSpecification", "price": "0.99", "priceCurrency": "USD", "billingDuration": "P1M", "unitText": "month" },
-          "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
-        },
-        {
-          "@type": "Offer",
-          "name": "First month free",
-          "description": "The first month is free for new subscribers, then $0.99 a month until cancelled.",
-          "price": "0",
-          "priceCurrency": "USD",
-          "eligibleDuration": { "@type": "QuantitativeValue", "value": 1, "unitCode": "MON" },
-          "availability": "https://schema.org/InStock",
-          "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://heymile.app/#faq",
-      "mainEntity": [
-        { "@type": "Question", "name": "How much does HeyMile cost?", "acceptedAnswer": { "@type": "Answer", "text": "$0.99 a month, and the first month is free for new subscribers. It renews each month until you cancel, billed through your Apple Account. If you cancel, you can still read and export your records." } },
-        { "@type": "Question", "name": "Does HeyMile log drives automatically?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, once two things are on: location access set to Always, and tracking turned on. Then HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers." } },
-        { "@type": "Question", "name": "What do I need to turn on?", "acceptedAnswer": { "@type": "Answer", "text": "Two things. In the iPhone’s Settings, open HeyMile, then Location, and choose Always, with Precise Location on. When you turn tracking on, iOS asks twice: allow location access, then choose Change to Always Allow. With While Using the App only, HeyMile can’t log drives on its own. Then check the top of HeyMile’s first screen: it should say Tracking on. If it says anything else, tap it." } },
-        { "@type": "Question", "name": "Does HeyMile work with CarPlay?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car." } },
-        { "@type": "Question", "name": "What is in the report?", "acceptedAnswer": { "@type": "Answer", "text": "Every trip with its date, route, purpose and miles, and your odometer readings, exported as a PDF or a spreadsheet for the month or the year." } },
-        { "@type": "Question", "name": "Do I need an account?", "acceptedAnswer": { "@type": "Answer", "text": "No. HeyMile has no account, no ads and no analytics. Your log lives on your iPhone and in your own iCloud." } },
-        { "@type": "Question", "name": "Which iPhones does HeyMile run on?", "acceptedAnswer": { "@type": "Answer", "text": "iPhone with iOS 26 or later, in English or Spanish." } },
-        { "@type": "Question", "name": "Is HeyMile tax advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. HeyMile is a record-keeping tool. Dollar figures are estimates based on your log and the IRS standard mileage rate and aren’t guaranteed. Confirm with your tax advisor before you file." } }
-      ]
+     "@type": "Offer",
+     "name": "HeyMile Monthly",
+     "price": "0.99",
+     "priceCurrency": "USD",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "0.99",
+      "priceCurrency": "USD",
+      "billingDuration": "P1M",
+      "unitText": "month"
+     },
+     "availability": "https://schema.org/InStock",
+     "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
+     "description": "First month free for new subscribers, then $0.99 a month until cancelled."
     }
-  ]
+   ],
+   "softwareVersion": "1.0",
+   "datePublished": "2026-11-21",
+   "countriesSupported": "US"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heymile.app/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How much does HeyMile cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "$0.99 a month, and the first month is free for new subscribers. It renews each month until you cancel, billed through your Apple Account. If you cancel, you can still read and export your records."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does HeyMile log drives automatically?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, once two things are on: location access set to Always, and tracking turned on. Then HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do I need to turn on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Two things. In the iPhone’s Settings, tap Apps, then HeyMile, then Location, and choose Always, with Precise Location on. When you turn tracking on, iOS asks twice: allow location access, then choose Change to Always Allow. With While Using the App only, HeyMile can’t log drives on its own. Then check the top of HeyMile’s first screen: it should say Tracking on. If it says anything else, tap it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does HeyMile work with CarPlay?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is in the report?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Every trip with its date, route, purpose and miles, and your odometer readings, exported as a PDF or a spreadsheet for the month or the year."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need an account?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. HeyMile has no account, no ads and no analytics. Your log lives on your iPhone and in your own iCloud."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which iPhones does HeyMile run on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iPhone with iOS 26 or later, in English or Spanish."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is HeyMile free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HeyMile is free to download. Using it requires the HeyMile Monthly subscription: $0.99 a month, with the first month free for new subscribers."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does HeyMile work if I drive for more than one app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. HeyMile doesn’t connect to rideshare, delivery or booking apps. It logs the drives your iPhone detects, so miles from every app you drive for end up in one log."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does HeyMile drain my battery?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Between drives HeyMile relies on low-power signals from iOS. Precise GPS runs only while a drive is being recorded."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does HeyMile work on Android?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. HeyMile is an iPhone app, for iOS 26 or later, and it isn’t available for Android, iPad or the web."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is HeyMile tax advice?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. HeyMile is a record-keeping tool. Dollar figures are estimates based on your log and the IRS standard mileage rate and aren’t guaranteed. Confirm with your tax advisor before you file."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>
@@ -149,15 +280,15 @@
     <h1>
       <span>Every mile.</span>
       <span class="quiet">Less effort.</span>
+      <span class="sub">The mileage tracker for iPhone and CarPlay.</span>
     </h1>
-    <p class="lede">The mileage tracker for iPhone and CarPlay.</p>
     <div class="cta">
       <a class="button" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">Try it free</a>
       <a class="badge" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"><img src="/badges/app-store-en.svg" width="150" height="50" alt="Download on the App Store"></a>
     </div>
     <p class="cta-note">First month free, then $0.99 a month. For iPhone.</p>
     <figure class="phone">
-      <picture><source srcset="/screens/home-dark-v3.jpg" media="(prefers-color-scheme: dark)"><img src="/screens/home-v3.jpg" width="657" height="1428" alt="HeyMile’s first screen: tracking is on, 2,358.3 miles logged this year across 137 trips, the latest trip, Meeting with a client, and a large microphone button."></picture>
+      <picture><source srcset="/screens/home-dark-v3.jpg" media="(prefers-color-scheme: dark)"><img src="/screens/home-v3.jpg" width="657" height="1428" fetchpriority="high" alt="HeyMile’s first screen: tracking is on, 2,358.3 miles logged this year across 137 trips, the latest trip, Meeting with a client, and a large microphone button."></picture>
     </figure>
   </section>
 
@@ -205,6 +336,9 @@
       <li><a href="/for/landscapers/">Landscaping</a></li>
       <li><a href="/for/couriers/">Couriers</a></li>
       <li><a href="/for/insurance-adjusters/">Adjusting</a></li>
+      <li><a href="/for/house-cleaners/">Cleaning</a></li>
+      <li><a href="/for/mobile-notaries/">Notaries</a></li>
+      <li><a href="/for/pet-sitters/">Pet care</a></li>
     </ul>
     <p class="more"><a href="/for/">See how HeyMile fits your work</a></p>
   </section>
@@ -213,6 +347,7 @@
     <div class="intro reveal">
       <h2>Drive. Park. Tap.</h2>
     </div>
+    <button class="pause" type="button" aria-pressed="false" hidden>Pause animation</button>
 
     <!-- The Lock Screen card, acted out: miles count, the drive is logged, one tap says business or personal. -->
     <div class="live reveal" role="img" aria-label="An animation of HeyMile on the Lock Screen. While driving, the miles count up with two buttons, Business and Personal. Then: Drive logged, 2.2 miles. Business or personal? One tap on Business, and HeyMile asks what the drive was for.">
@@ -372,7 +507,7 @@
       </li>
       <li>
         <img class="sf" src="/icons/globe-blue.png" alt="" aria-hidden="true">
-        <h3>En español</h3>
+        <h3 lang="es">En español</h3>
         <p>English or Spanish, typed or spoken.</p>
       </li>
     </ul>
@@ -393,7 +528,7 @@
       <dt>Does HeyMile log drives automatically?</dt>
       <dd>Yes, once two things are on: location access set to Always, and tracking turned on. Then HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers.</dd>
       <dt>What do I need to turn on?</dt>
-      <dd>In the iPhone’s Settings, open HeyMile, then Location, and choose <strong>Always</strong>, with Precise Location on. When you turn tracking on, iOS asks twice: allow location access, then choose Change to Always Allow. With While Using the App only, HeyMile can’t log drives on its own. Then check the top of HeyMile’s first screen: it should say <strong>Tracking on</strong>. If it says anything else, tap it.</dd>
+      <dd>In the iPhone’s Settings, tap Apps, then HeyMile, then Location, and choose <strong>Always</strong>, with Precise Location on. When you turn tracking on, iOS asks twice: allow location access, then choose Change to Always Allow. With While Using the App only, HeyMile can’t log drives on its own. Then check the top of HeyMile’s first screen: it should say <strong>Tracking on</strong>. If it says anything else, tap it.</dd>
       <dt>Does HeyMile work with CarPlay?</dt>
       <dd>Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car.</dd>
       <dt>What is in the report?</dt>
@@ -402,10 +537,18 @@
       <dd>No. HeyMile has no account, no ads and no analytics. Your log lives on your iPhone and in your own iCloud.</dd>
       <dt>Which iPhones does HeyMile run on?</dt>
       <dd>iPhone with iOS 26 or later, in English or Spanish.</dd>
+      <dt>Is HeyMile free?</dt>
+      <dd>HeyMile is free to download. Using it requires the HeyMile Monthly subscription: $0.99 a month, with the first month free for new subscribers.</dd>
+      <dt>Does HeyMile work if I drive for more than one app?</dt>
+      <dd>Yes. HeyMile doesn’t connect to rideshare, delivery or booking apps. It logs the drives your iPhone detects, so miles from every app you drive for end up in one log.</dd>
+      <dt>Does HeyMile drain my battery?</dt>
+      <dd>Between drives HeyMile relies on low-power signals from iOS. Precise GPS runs only while a drive is being recorded.</dd>
+      <dt>Does HeyMile work on Android?</dt>
+      <dd>No. HeyMile is an iPhone app, for iOS 26 or later, and it isn’t available for Android, iPad or the web.</dd>
       <dt>Is HeyMile tax advice?</dt>
       <dd>No. HeyMile is a record-keeping tool. Dollar figures are estimates based on your log and the IRS standard mileage rate and aren’t guaranteed. Confirm with your tax advisor before you file.</dd>
     </dl>
-    <p class="more"><a href="/support/">More answers in Support</a></p>
+    <p class="more"><a href="/support/">More answers in Support</a> · <a href="/irs-mileage-rate/">IRS mileage rates for 2026</a> · <a href="/mileage-log-requirements/">What a mileage log needs</a></p>
   </section>
 
   <section class="statement price reveal" id="get">
@@ -433,6 +576,9 @@
       <li><a href="/for/landscapers/">Landscaping and lawn care</a></li>
       <li><a href="/for/couriers/">Couriers</a></li>
       <li><a href="/for/insurance-adjusters/">Insurance adjusters</a></li>
+      <li><a href="/for/house-cleaners/">House cleaners</a></li>
+      <li><a href="/for/mobile-notaries/">Mobile notaries</a></li>
+      <li><a href="/for/pet-sitters/">Pet sitters and dog walkers</a></li>
     </ul>
   </nav>
   <nav aria-label="Footer">
@@ -440,6 +586,10 @@
       <li><a href="/">HeyMile</a></li>
       <li><a href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">App Store</a></li>
       <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+      <li><a href="/irs-mileage-rate/">IRS mileage rates</a></li>
+      <li><a href="/mileage-log-requirements/">Mileage log guide</a></li>
+      <li><a href="/carplay-mileage-tracker/">CarPlay</a></li>
+      <li><a href="/about/">About</a></li>
       <li><a href="/privacy/">Privacy</a></li>
       <li><a href="/terms/">Terms</a></li>
       <li><a href="/support/">Support</a></li>

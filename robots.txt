@@ -7,6 +7,7 @@ Allow: /
 
 User-agent: Googlebot
 User-agent: Google-Extended
+User-agent: GoogleOther
 User-agent: Bingbot
 User-agent: Applebot
 User-agent: Applebot-Extended
@@ -21,8 +22,13 @@ User-agent: Claude-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: Amazonbot
+User-agent: Amzn-SearchBot
+User-agent: Amzn-User
 User-agent: meta-externalagent
+User-agent: meta-webindexer
+User-agent: meta-externalfetcher
 User-agent: MistralAI-User
+User-agent: MistralAI-Index
 User-agent: CCBot
 Allow: /
 

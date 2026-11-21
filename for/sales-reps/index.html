@@ -6,7 +6,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mileage Tracker for Outside Sales Reps | HeyMile</title>
-<meta name="description" content="Outside sales reps: HeyMile logs drives to client visits automatically, keeps the purpose of each one, and exports monthly mileage reports for reimbursement or your tax advisor.">
+<meta name="description" content="Mileage log for outside sales reps: client visits logged automatically with their purpose, and monthly reports for reimbursement or tax time.">
 <meta name="color-scheme" content="light dark">
 <meta name="apple-itunes-app" content="app-id=6834995051">
 <link rel="canonical" href="https://heymile.app/for/sales-reps/">
@@ -16,15 +16,17 @@
 <meta property="og:site_name" content="HeyMile">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Mileage Tracker for Outside Sales Reps | HeyMile">
-<meta property="og:description" content="Outside sales reps: HeyMile logs drives to client visits automatically, keeps the purpose of each one, and exports monthly mileage reports for reimbursement or your tax advisor.">
+<meta property="og:description" content="Mileage log for outside sales reps: client visits logged automatically with their purpose, and monthly reports for reimbursement or tax time.">
 <meta property="og:url" content="https://heymile.app/for/sales-reps/">
 <meta property="og:image" content="https://heymile.app/og-carplay.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mileage Tracker for Outside Sales Reps | HeyMile">
-<meta name="twitter:description" content="Outside sales reps: HeyMile logs drives to client visits automatically, keeps the purpose of each one, and exports monthly mileage reports for reimbursement or your tax advisor.">
+<meta name="twitter:description" content="Mileage log for outside sales reps: client visits logged automatically with their purpose, and monthly reports for reimbursement or tax time.">
 <meta name="twitter:image" content="https://heymile.app/og-carplay.jpg">
+<meta property="og:image:alt" content="HeyMile on a CarPlay screen: Last drive: 22.8 mi, with Business and Personal buttons.">
+<meta name="twitter:image:alt" content="HeyMile on a CarPlay screen: Last drive: 22.8 mi, with Business and Personal buttons.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/styles.css">
@@ -37,7 +39,7 @@
    "@id": "https://heymile.app/for/sales-reps/",
    "url": "https://heymile.app/for/sales-reps/",
    "name": "Mileage Tracker for Outside Sales Reps | HeyMile",
-   "description": "Outside sales reps: HeyMile logs drives to client visits automatically, keeps the purpose of each one, and exports monthly mileage reports for reimbursement or your tax advisor.",
+   "description": "Mileage log for outside sales reps: client visits logged automatically with their purpose, and monthly reports for reimbursement or tax time.",
    "inLanguage": "en",
    "isPartOf": {
     "@id": "https://heymile.app/#site"
@@ -45,6 +47,7 @@
    "about": {
     "@id": "https://heymile.app/#app"
    },
+   "dateModified": "2026-11-21",
    "primaryImageOfPage": "https://heymile.app/screens/carplay-routes-phone.jpg"
   },
   {
@@ -74,7 +77,10 @@
    "@type": "MobileApplication",
    "@id": "https://heymile.app/#app",
    "name": "HeyMile: Mileage Tracker",
-   "alternateName": "HeyMile",
+   "alternateName": [
+    "HeyMile",
+    "HeyMile: Registro de millas"
+   ],
    "operatingSystem": "iOS 26 or later",
    "applicationCategory": "FinanceApplication",
    "availableOnDevice": "iPhone",
@@ -82,6 +88,9 @@
     "en",
     "es"
    ],
+   "softwareVersion": "1.0",
+   "datePublished": "2026-11-21",
+   "countriesSupported": "US",
    "url": "https://heymile.app/",
    "downloadUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
    "installUrl": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051",
@@ -97,26 +106,13 @@
      "name": "HeyMile Monthly",
      "price": "0.99",
      "priceCurrency": "USD",
+     "description": "First month free for new subscribers, then $0.99 a month until cancelled.",
      "priceSpecification": {
       "@type": "UnitPriceSpecification",
       "price": "0.99",
       "priceCurrency": "USD",
       "billingDuration": "P1M",
       "unitText": "month"
-     },
-     "availability": "https://schema.org/InStock",
-     "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
-    },
-    {
-     "@type": "Offer",
-     "name": "First month free",
-     "description": "The first month is free for new subscribers, then $0.99 a month until cancelled.",
-     "price": "0",
-     "priceCurrency": "USD",
-     "eligibleDuration": {
-      "@type": "QuantitativeValue",
-      "value": 1,
-      "unitCode": "MON"
      },
      "availability": "https://schema.org/InStock",
      "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
@@ -171,7 +167,7 @@
 </header>
 
 <main id="content">
-  <p class="kicker"><a href="/for/">HeyMile for sales reps</a></p>
+  <p class="kicker">HeyMile for sales reps</p>
   <h1>A mileage log for outside sales.</h1>
   <p class="lede">Client visits, territory days, trade shows, sample drop-offs. HeyMile logs the drives, keeps the purpose, and has the month’s report ready when the expense report is due.</p>
   <div class="cta">
@@ -183,7 +179,7 @@
   <figure class="carplay-shot">
     <picture>
       <source srcset="/screens/carplay-dark.jpg" width="1200" height="909" media="(prefers-color-scheme: dark)">
-      <img src="/screens/carplay-routes-phone.jpg" width="1200" height="857" alt="HeyMile on a CarPlay screen after a drive. The title reads Last drive: 22.8 mi, with two large buttons: Business, a blue briefcase, and Personal, a green house.">
+      <img src="/screens/carplay-routes-phone.jpg" width="1200" height="857" fetchpriority="high" alt="HeyMile on a CarPlay screen after a drive. The title reads Last drive: 22.8 mi, with two large buttons: Business, a blue briefcase, and Personal, a green house.">
     </picture>
     <figcaption class="shot-caption">HeyMile on CarPlay: answer the drive with one tap before you leave the car.</figcaption>
   </figure>
@@ -213,7 +209,7 @@
     <li><img src="/icons/widget-blue.png" alt="" aria-hidden="true"><strong>Ready for the expense report.</strong> Export the month as a PDF or a spreadsheet and attach it.</li>
     <li><img src="/icons/briefcase-blue.png" alt="" aria-hidden="true"><strong>CarPlay in the car.</strong> Business or Personal with one tap on the car’s screen, between appointments.</li>
   </ul>
-  <p class="setup"><strong>Before your first drive:</strong> in the iPhone’s Settings, open HeyMile, then Location, and choose <strong>Always</strong>, with Precise Location on. Then check that the top of HeyMile’s first screen says <strong>Tracking on</strong>. Without both, HeyMile can’t log drives on its own.</p>
+  <p class="setup"><strong>Before your first drive:</strong> in the iPhone’s Settings, tap Apps, then HeyMile, then Location, and choose <strong>Always</strong>, with Precise Location on. Then check that the top of HeyMile’s first screen says <strong>Tracking on</strong>. Without both, HeyMile can’t log drives on its own.</p>
 
   <section class="faq">
   <h2>Questions</h2>
@@ -245,6 +241,9 @@
     <li><a href="/for/landscapers/">Landscaping and lawn care</a></li>
     <li><a href="/for/couriers/">Couriers</a></li>
     <li><a href="/for/insurance-adjusters/">Insurance adjusters</a></li>
+    <li><a href="/for/house-cleaners/">House cleaners</a></li>
+    <li><a href="/for/mobile-notaries/">Mobile notaries</a></li>
+    <li><a href="/for/pet-sitters/">Pet sitters and dog walkers</a></li>
     <li><a href="/for/">Every kind of driver</a></li>
   </ul>
 
@@ -265,6 +264,9 @@
       <li><a href="/for/landscapers/">Landscaping and lawn care</a></li>
       <li><a href="/for/couriers/">Couriers</a></li>
       <li><a href="/for/insurance-adjusters/">Insurance adjusters</a></li>
+      <li><a href="/for/house-cleaners/">House cleaners</a></li>
+      <li><a href="/for/mobile-notaries/">Mobile notaries</a></li>
+      <li><a href="/for/pet-sitters/">Pet sitters and dog walkers</a></li>
     </ul>
   </nav>
   <nav aria-label="Footer">
@@ -272,6 +274,10 @@
       <li><a href="/">HeyMile</a></li>
       <li><a href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">App Store</a></li>
       <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+      <li><a href="/irs-mileage-rate/">IRS mileage rates</a></li>
+      <li><a href="/mileage-log-requirements/">Mileage log guide</a></li>
+      <li><a href="/carplay-mileage-tracker/">CarPlay</a></li>
+      <li><a href="/about/">About</a></li>
       <li><a href="/privacy/">Privacy</a></li>
       <li><a href="/terms/">Terms</a></li>
       <li><a href="/support/">Support</a></li>

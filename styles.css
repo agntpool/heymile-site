@@ -74,6 +74,7 @@ a:focus-visible {
 }
 
 .skip:focus {
+  z-index: 10;
   left: 16px;
   top: 16px;
   padding: 8px 12px;
@@ -1542,7 +1543,7 @@ h1, h2 { text-wrap: balance; }
 
 :root {
   --button: #0071e3;
-  --button-hover: #0077ed;
+  --button-hover: #0068d1;
 }
 
 /* "Try it free", then Apple's badge. */
@@ -1728,8 +1729,20 @@ a.badge:focus-visible {
   color: inherit;
 }
 
-.trades li:has(a):hover {
+.trades li:has(a) {
+  padding: 0;
+}
+
+/* The whole chip is the link, so the whole chip can be tapped. */
+.trades a {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.trades a:hover {
   background: color-mix(in srgb, var(--fill) 80%, var(--ink) 8%);
+  text-decoration: none;
 }
 
 .home .more {
@@ -2021,4 +2034,128 @@ a.badge:focus-visible {
   background: var(--fill);
   font-size: 16px;
   line-height: 1.5;
+}
+
+/* The sticky bar never covers a focused link or a section someone jumped to. */
+html {
+  scroll-padding-top: 72px;
+}
+
+/* The keyword line sits inside the home page's heading, styled as before. */
+.home h1 .sub {
+  margin-top: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(21px, 2.6vw, 28px);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--soft);
+}
+
+.hero h1 span:nth-child(3) { animation-delay: 0.5s; }
+
+/* Pause for the looping Lock Screen animation (shown by site.js). */
+.pause {
+  display: block;
+  margin: 24px auto 0;
+  padding: 8px 16px;
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pause[hidden] {
+  display: none;
+}
+
+.pause:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Paused: the card rests on its question, as with reduced motion. */
+.paused .band.loop .live-card,
+.paused .band.loop .roller i,
+.paused .band.loop .live-button.tapped {
+  animation: none;
+}
+
+.paused .band.loop .is-logged {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pause {
+    display: none;
+  }
+}
+
+/* Rate tables on the guide pages. */
+.page .table-wrap {
+  margin: 8px 0 16px;
+  overflow-x: auto;
+}
+
+.page table.rates {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  font-size: 16px;
+}
+
+.page .rates caption {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-align: left;
+  color: var(--soft);
+}
+
+.page .rates th,
+.page .rates td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.page .rates thead th {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--soft);
+}
+
+.page .rates tbody th {
+  font-weight: 600;
+}
+
+/* The fact sheet on the About page. */
+.page .facts {
+  display: grid;
+  grid-template-columns: minmax(120px, 30%) 1fr;
+  gap: 10px 20px;
+  margin: 0;
+}
+
+.page .facts dt {
+  font-weight: 600;
+}
+
+.page .facts dd {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .page .facts {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .page .facts dd {
+    margin-bottom: 10px;
+  }
 }

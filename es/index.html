@@ -5,8 +5,8 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>HeyMile: Registro de millas para iPhone y CarPlay</title>
-<meta name="description" content="HeyMile registra tus viajes automáticamente y pregunta “¿Negocio o personal?” en la pantalla bloqueada y en CarPlay. Registro por voz y reportes para impuestos. Primer mes gratis, luego US$0.99 al mes.">
+<title>HeyMile: app de millaje y registro de millas para iPhone</title>
+<meta name="description" content="App de millaje para iPhone y CarPlay: registra tus millas de trabajo solas, Negocio o Personal con un toque y reportes para impuestos. Primer mes gratis.">
 <meta name="color-scheme" content="light dark">
 <meta name="apple-itunes-app" content="app-id=6834995051">
 <link rel="canonical" href="https://heymile.app/es/">
@@ -53,8 +53,14 @@
   {
    "@type": "MobileApplication",
    "@id": "https://heymile.app/#app",
-   "name": "HeyMile: Registro de millas",
-   "alternateName": "HeyMile",
+   "name": "HeyMile: Mileage Tracker",
+   "alternateName": [
+    "HeyMile",
+    "HeyMile: Registro de millas"
+   ],
+   "softwareVersion": "1.0",
+   "datePublished": "2026-11-21",
+   "countriesSupported": "US",
    "operatingSystem": "iOS 26 or later",
    "applicationCategory": "FinanceApplication",
    "availableOnDevice": "iPhone",
@@ -77,25 +83,13 @@
      "name": "HeyMile mensual",
      "price": "0.99",
      "priceCurrency": "USD",
+     "description": "El primer mes es gratis para nuevos suscriptores, luego US$0.99 al mes hasta que canceles.",
      "priceSpecification": {
       "@type": "UnitPriceSpecification",
       "price": "0.99",
       "priceCurrency": "USD",
       "billingDuration": "P1M",
       "unitText": "mes"
-     },
-     "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
-    },
-    {
-     "@type": "Offer",
-     "name": "Primer mes gratis",
-     "description": "El primer mes es gratis para nuevos suscriptores, luego US$0.99 al mes hasta que canceles.",
-     "price": "0",
-     "priceCurrency": "USD",
-     "eligibleDuration": {
-      "@type": "QuantitativeValue",
-      "value": 1,
-      "unitCode": "MON"
      },
      "url": "https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"
     }
@@ -126,7 +120,7 @@
      "name": "¿Qué tengo que activar?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Dos cosas. En Configuración del iPhone, abre HeyMile, luego Ubicación, y elige Siempre, con Ubicación exacta activada. Cuando activas el registro, iOS pregunta dos veces: permite el acceso a la ubicación y luego elige permitirlo siempre. Si solo lo permites mientras usas la app, HeyMile no puede registrar viajes por sí solo. Después revisa la parte de arriba de la primera pantalla de HeyMile: debe decir Registro activado. Si dice otra cosa, tócala."
+      "text": "Dos cosas. En Configuración, toca Apps, luego HeyMile y Ubicación, y elige Siempre, con Ubicación precisa activada. Cuando activas el registro, iOS pregunta dos veces: permite el acceso a la ubicación y luego elige permitirlo siempre. Si solo lo permites mientras usas la app, HeyMile no puede registrar viajes por sí solo. Después revisa la parte de arriba de la primera pantalla de HeyMile: debe decir Registro activado. Si dice otra cosa, tócala."
      }
     },
     {
@@ -163,6 +157,38 @@
     },
     {
      "@type": "Question",
+     "name": "¿HeyMile es gratis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "HeyMile se descarga gratis. Para usarlo necesitas la suscripción HeyMile mensual: US$0.99 al mes, con el primer mes gratis para nuevos suscriptores."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿HeyMile funciona si manejo para más de una app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. HeyMile no se conecta con apps de rideshare, reparto ni reservas. Registra los viajes que detecta tu iPhone, así que las millas de todas las apps quedan en un solo registro."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿HeyMile gasta mucha batería?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Entre viajes, HeyMile usa señales de bajo consumo de iOS. El GPS preciso solo funciona mientras se registra un viaje."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿HeyMile funciona en Android?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. HeyMile es una app para iPhone con iOS 26 o posterior, y no está disponible para Android, iPad ni la web."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "¿HeyMile es asesoría fiscal?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -179,7 +205,7 @@
 <a class="skip" href="#content">Saltar al contenido</a>
 
 <header class="top">
-  <nav aria-label="Site">
+  <nav aria-label="Sitio">
     <a class="brand" href="/es/">HeyMile.</a>
     <span class="links">
       <a href="/es/para/">Para quién</a>
@@ -209,15 +235,15 @@
     <h1>
       <span>Cada milla.</span>
       <span class="quiet">Menos esfuerzo.</span>
+      <span class="sub">El registro de millas para iPhone y CarPlay.</span>
     </h1>
-    <p class="lede">El registro de millas para iPhone y CarPlay.</p>
     <div class="cta">
       <a class="button" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">Probar gratis</a>
       <a class="badge" href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051"><img src="/badges/app-store-es.svg" width="150" height="50" alt="Descárgalo en el App Store"></a>
     </div>
     <p class="cta-note">El primer mes es gratis, luego US$0.99 al mes. Para iPhone.</p>
     <figure class="phone">
-      <picture><source srcset="/screens/es-home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="/screens/es-home.jpg" width="657" height="1428" alt="La primera pantalla de HeyMile: Registro activado, 2,358.3 millas este año en 137 viajes, el viaje más reciente, Reunión con cliente, y un botón grande de micrófono."></picture>
+      <picture><source srcset="/screens/es-home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="/screens/es-home.jpg" width="657" height="1428" fetchpriority="high" alt="La primera pantalla de HeyMile: Registro activado, 2,358.3 millas este año en 137 viajes, el viaje más reciente, Reunión con cliente, y un botón grande de micrófono."></picture>
     </figure>
   </section>
 
@@ -260,6 +286,9 @@
       <li><a href="/es/para/contratistas/">Contratistas</a></li>
       <li><a href="/es/para/cuidado-en-casa/">Cuidado en casa</a></li>
       <li><a href="/es/para/jardineria/">Jardinería</a></li>
+      <li><a href="/es/para/agentes-de-bienes-raices/">Bienes raíces</a></li>
+      <li><a href="/es/para/repartidores-de-paquetes/">Paquetes</a></li>
+      <li><a href="/es/para/limpieza/">Limpieza</a></li>
     </ul>
     <p class="more"><a href="/es/para/">Mira cómo se adapta HeyMile a tu trabajo</a></p>
   </section>
@@ -268,6 +297,7 @@
     <div class="intro reveal">
       <h2>Maneja. Estaciona. Toca.</h2>
     </div>
+    <button class="pause" type="button" aria-pressed="false" hidden>Pausar animación</button>
 
     <!-- The Lock Screen card, acted out: miles count, the drive is logged, one tap says business or personal. -->
     <div class="live reveal" role="img" aria-label="Una animación de HeyMile en la pantalla bloqueada. Mientras manejas, las millas suben con dos botones, Negocio y Personal. Luego: Viaje registrado, 2.2 millas. ¿Negocio o personal? Un toque en Negocio y HeyMile pregunta para qué fue el viaje.">
@@ -427,7 +457,7 @@
       </li>
       <li>
         <img class="sf" src="/icons/globe-blue.png" alt="" aria-hidden="true">
-        <h3>In English</h3>
+        <h3>Bilingüe</h3>
         <p>Español o inglés, escrito o hablado.</p>
       </li>
     </ul>
@@ -448,7 +478,7 @@
       <dt>¿HeyMile registra los viajes automáticamente?</dt>
       <dd>Sí, cuando dos cosas están activadas: el acceso a la ubicación en Siempre y el registro activado. Así HeyMile detecta tus viajes y registra las millas, incluso con la app cerrada. También puedes hacer que cada viaje empiece cuando tu auto se conecta. Cuando llegas, la pantalla bloqueada pregunta “¿Negocio o personal?” y un toque responde.</dd>
       <dt>¿Qué tengo que activar?</dt>
-      <dd>Dos cosas. En Configuración del iPhone, abre HeyMile, luego Ubicación, y elige Siempre, con Ubicación exacta activada. Cuando activas el registro, iOS pregunta dos veces: permite el acceso a la ubicación y luego elige permitirlo siempre. Si solo lo permites mientras usas la app, HeyMile no puede registrar viajes por sí solo. Después revisa la parte de arriba de la primera pantalla de HeyMile: debe decir Registro activado. Si dice otra cosa, tócala.</dd>
+      <dd>Dos cosas. En Configuración, toca Apps, luego HeyMile y Ubicación, y elige Siempre, con Ubicación precisa activada. Cuando activas el registro, iOS pregunta dos veces: permite el acceso a la ubicación y luego elige permitirlo siempre. Si solo lo permites mientras usas la app, HeyMile no puede registrar viajes por sí solo. Después revisa la parte de arriba de la primera pantalla de HeyMile: debe decir Registro activado. Si dice otra cosa, tócala.</dd>
       <dt>¿HeyMile funciona con CarPlay?</dt>
       <dd>Sí. En la pantalla del auto, HeyMile muestra el viaje con dos botones grandes, Negocio y Personal, para que respondas con un toque antes de bajarte.</dd>
       <dt>¿Qué incluye el reporte?</dt>
@@ -457,10 +487,18 @@
       <dd>No. HeyMile no tiene cuentas, anuncios ni analíticas. Tu registro vive en tu iPhone y en tu propio iCloud.</dd>
       <dt>¿En qué iPhone funciona HeyMile?</dt>
       <dd>En iPhone con iOS 26 o posterior, en español o en inglés.</dd>
+      <dt>¿HeyMile es gratis?</dt>
+      <dd>HeyMile se descarga gratis. Para usarlo necesitas la suscripción HeyMile mensual: US$0.99 al mes, con el primer mes gratis para nuevos suscriptores.</dd>
+      <dt>¿HeyMile funciona si manejo para más de una app?</dt>
+      <dd>Sí. HeyMile no se conecta con apps de rideshare, reparto ni reservas. Registra los viajes que detecta tu iPhone, así que las millas de todas las apps quedan en un solo registro.</dd>
+      <dt>¿HeyMile gasta mucha batería?</dt>
+      <dd>Entre viajes, HeyMile usa señales de bajo consumo de iOS. El GPS preciso solo funciona mientras se registra un viaje.</dd>
+      <dt>¿HeyMile funciona en Android?</dt>
+      <dd>No. HeyMile es una app para iPhone con iOS 26 o posterior, y no está disponible para Android, iPad ni la web.</dd>
       <dt>¿HeyMile es asesoría fiscal?</dt>
       <dd>No. HeyMile es una herramienta para llevar registros. Los cálculos usan tu registro y la tarifa estándar por milla del IRS, y no están garantizados. Confirma con tu asesor fiscal antes de declarar.</dd>
     </dl>
-    <p class="more"><a href="/support/">Más respuestas en Soporte (en inglés)</a></p>
+    <p class="more"><a href="/support/">Más respuestas en Soporte (en inglés)</a> · <a href="/es/tarifa-de-millaje-irs/">Tarifa de millaje del IRS 2026</a> · <a href="/es/registro-de-millas-para-impuestos/">Qué pide el IRS en un registro</a></p>
   </section>
 
   <section class="statement price reveal" id="get">
@@ -483,6 +521,9 @@
       <li><a href="/es/para/contratistas/">Contratistas y oficios</a></li>
       <li><a href="/es/para/cuidado-en-casa/">Salud y cuidado en casa</a></li>
       <li><a href="/es/para/jardineria/">Jardinería y paisajismo</a></li>
+      <li><a href="/es/para/agentes-de-bienes-raices/">Agentes de bienes raíces</a></li>
+      <li><a href="/es/para/repartidores-de-paquetes/">Repartidores de paquetes</a></li>
+      <li><a href="/es/para/limpieza/">Limpieza de casas</a></li>
       <li><a href="/for/">Más trabajos (en inglés)</a></li>
     </ul>
   </nav>
@@ -491,9 +532,12 @@
       <li><a href="/es/">HeyMile</a></li>
       <li><a href="https://apps.apple.com/app/heymile-mileage-tracker/id6834995051">App Store</a></li>
       <li><a href="/" hreflang="en" lang="en">English</a></li>
+      <li><a href="/es/tarifa-de-millaje-irs/">Tarifa de millaje del IRS</a></li>
+      <li><a href="/es/registro-de-millas-para-impuestos/">Qué pide el IRS en un registro</a></li>
+      <li><a href="/about/">Acerca de (en inglés)</a></li>
       <li><a href="/privacy/">Privacidad (en inglés)</a></li>
       <li><a href="/terms/">Términos (en inglés)</a></li>
-      <li><a href="/support/">Soporte</a></li>
+      <li><a href="/support/">Soporte (en inglés)</a></li>
     </ul>
   </nav>
   <p class="fine">HeyMile es una herramienta para llevar registros. Los cálculos en dólares usan tu registro y la tarifa estándar por milla del IRS, y no están garantizados. HeyMile no es asesoría fiscal. Confirma con tu asesor fiscal antes de declarar. La suscripción se cobra a través de tu cuenta de Apple.</p>

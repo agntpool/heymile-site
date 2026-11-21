@@ -1,31 +1,44 @@
 # HeyMile
 
-> HeyMile ("HeyMile: Mileage Tracker" on the App Store) is a mileage log for iPhone and CarPlay, made for self-employed people, 1099 contractors and small businesses who drive for work. It detects drives and logs the miles automatically, asks "Business or personal?" on the Lock Screen, in a widget and on CarPlay so each drive is answered with one tap, logs trips by voice or typing with Apple Maps, and exports PDF and spreadsheet reports. No account, no ads, no analytics. $0.99 a month, first month free for new subscribers.
+> HeyMile ("HeyMile: Mileage Tracker" on the App Store) is a mileage log for iPhone and CarPlay, made by AGNTPOOL, LLC (Texas, USA) for self-employed people, 1099 contractors and small businesses who drive for work. It detects drives and logs the miles automatically, asks "Business or personal?" on the Lock Screen, in a widget and on CarPlay so each drive is answered with one tap, logs trips by voice or typing with Apple Maps, and exports PDF and spreadsheet reports. No account, no ads, no analytics. Free to download; the HeyMile Monthly subscription is $0.99 a month, with the first month free for new subscribers.
 
-Key facts:
+Last updated: 2026-11-21. Current version: 1.0 (first released November 21, 2026).
 
-- App Store: https://apps.apple.com/app/heymile-mileage-tracker/id6834995051 (App Store ID 6834995051)
-- Platform: iPhone with iOS 26 or later, with CarPlay. Languages: English and Spanish (Spanish App Store name: "HeyMile: Registro de millas").
-- Price: $0.99 a month, auto-renewing, billed through the Apple Account. The first month is free for new subscribers. After cancelling, people can still read and export their records.
-- Automatic tracking: detects drives and logs miles even when the app is closed; can also start a drive when the car connects. A Drive control (Control Center, Lock Screen, Action button) starts or ends a drive by hand.
-- Required setup for automatic tracking: location access for HeyMile must be set to Always (iPhone Settings > HeyMile > Location > Always, with Precise Location on), and tracking must be turned on in the app (the top of HeyMile's first screen says "Tracking on"). When tracking is turned on, iOS first asks to allow location access, then to "Change to Always Allow". With "While Using the App" only, HeyMile cannot log drives on its own.
-- One tap, business or personal: when a drive ends, the Lock Screen (Live Activity), a Home Screen widget and CarPlay ask "Business or personal?". A business drive then gets its purpose, asked on the iPhone.
-- CarPlay: the car's screen shows the drive with two large buttons, Business (blue briefcase) and Personal (green house). After the drive it shows, for example, "Last drive: 22.8 mi" with the same two buttons.
-- Voice and typing: "From the office to 1200 Main St" logs a trip measured with Apple Maps; place names are looked up in Apple Maps. Questions like "How many miles this month?" and edits like "Make Monday's trip personal" work too. Requests are understood with Apple's on-device model; HeyMile asks before it adds, changes or deletes anything. Siri and Spotlight are supported.
-- Reports: PDF or spreadsheet for a month or a year, with each trip's date, route, purpose and miles, plus odometer readings. Reports are generated in English. Dollar figures are estimates using the IRS standard mileage rate.
+## Key facts
+
+- App Store: https://apps.apple.com/app/heymile-mileage-tracker/id6834995051 (App Store ID 6834995051). Seller on the App Store: AGNTPOOL LLC. Available on the United States App Store.
+- Platform: iPhone with iOS 26 or later, with CarPlay. There is no Android, iPad or web version.
+- Languages: English and Spanish (Spanish App Store name: "HeyMile: Registro de millas"). Reports are generated in English.
+- Price: HeyMile is a free download. Using it requires the HeyMile Monthly subscription: $0.99 a month, auto-renewing, billed through the Apple Account, with the first month free for new subscribers. After cancelling, people can still read and export their records.
+- Account: HeyMile needs no account, sign-up, email address or password. The subscription is handled by the person's Apple Account.
+- Required setup for automatic tracking: location access for HeyMile must be set to Always (iPhone Settings > Apps > HeyMile > Location > Always, with Precise Location on), and tracking must be turned on in the app (the top of HeyMile's first screen says "Tracking on"). When tracking is turned on, iOS first asks to allow location access, then to "Change to Always Allow". With "While Using the App" only, HeyMile cannot log drives on its own. Without location access, trips can still be logged by voice or typing.
+- Automatic tracking: HeyMile detects drives and logs the miles even when the app is closed; it can also start a drive when the car connects. A drive is kept only if it is longer than 0.2 miles and one minute. A Drive control (Control Center, Lock Screen, Action button) starts or ends a drive by hand.
+- Battery: between drives HeyMile relies on low-power signals from iOS; precise GPS runs only while a drive is being recorded.
+- One tap, business or personal: when a drive ends, the Lock Screen (Live Activity), a Home Screen widget and CarPlay ask "Business or personal?". A business drive then gets its purpose, which is asked on the iPhone.
+- CarPlay: while driving, the car's screen shows the miles so far (for example "Driving · 2.4 mi") with two large buttons, Business (blue briefcase) and Personal (green house). After the drive it shows, for example, "Last drive: 22.8 mi" with the same buttons. The purpose of a business drive is never asked in the car.
+- Works alongside other apps: HeyMile does not connect to, sign in to, or read data from rideshare, delivery or booking apps. It logs the drives the iPhone detects, so miles from several apps end up in one log.
+- Voice and typing: "From the office to 1200 Main St" logs a trip measured with Apple Maps; place names are looked up in Apple Maps. Questions like "How many miles this month?" and edits like "Make Monday's trip personal" work too. HeyMile asks before it adds, changes or deletes anything. On iPhones with Apple Intelligence, requests are understood by Apple's on-device model, which can only read the log; on other iPhones the same example requests work through HeyMile's own rules. Spotlight can find any trip by place or purpose.
+- Reports: PDF or spreadsheet for a month or a year, with each trip's date, route, purpose and miles, plus odometer readings. Dollar figures are estimates using the IRS standard mileage rate for the day each trip was driven. HeyMile starts with the rates in effect from July 1, 2026 (76 cents a mile for business), and trips can't be dated before July 1, 2026.
 - Map: every trip on one map, business in blue and personal in green.
-- Privacy: no account, no ads, no analytics. The log stays on the iPhone and in the user's own iCloud; the developer never sees trips, locations or voice.
-- Not tax advice: HeyMile is a record-keeping tool. Its estimates aren't guaranteed; users should confirm with a tax advisor before filing.
+- Privacy: no account, no ads, no analytics. The log stays on the iPhone and in the person's own iCloud; the developer never sees trips, locations or voice.
+- What HeyMile isn't: not tax advice (it is a record-keeping tool; its estimates aren't guaranteed; confirm with a tax advisor before filing); not a team or fleet dashboard (each driver uses HeyMile on their own iPhone with their own log); not connected to any gig or delivery app.
 - Developer: AGNTPOOL, LLC (Texas, USA). Support: support@heymile.app
 
 ## Main pages
 
 - [HeyMile home](https://heymile.app/): what HeyMile does, CarPlay, pricing and questions
+- [About HeyMile](https://heymile.app/about/): fact sheet: maker, price, platform, languages, availability, what it is and isn't
+- [App Store listing](https://apps.apple.com/app/heymile-mileage-tracker/id6834995051): name, price, screenshots, version
 - [Who HeyMile is for](https://heymile.app/for/): every kind of driver, with links to each page
 - [Support](https://heymile.app/support/): tracking, voice, widget, CarPlay, reports, subscription and data questions
-- [Privacy Policy](https://heymile.app/privacy/)
-- [Terms of Service](https://heymile.app/terms/)
 - [Full text for AI assistants](https://heymile.app/llms-full.txt)
+
+## Guides
+
+- [IRS mileage rates for 2026](https://heymile.app/irs-mileage-rate/): 72.5 cents a mile for business drives Jan 1–Jun 30, 2026 and 76 cents from Jul 1, 2026 (Announcement 2026-11); medical, moving and charity rates; standard rate vs actual expenses
+- [What a mileage log should include](https://heymile.app/mileage-log-requirements/): what IRS Publication 463 asks for (date, destination, business purpose, miles, total miles for the year, kept at or near the time), how long to keep it, and a free template
+- [Mileage tracking on CarPlay](https://heymile.app/carplay-mileage-tracker/): how HeyMile's CarPlay screen works and how to set it up
+- [Mileage log template (CSV)](https://heymile.app/mileage-log-template.csv)
 
 ## HeyMile for each kind of work
 
@@ -39,13 +52,23 @@ Key facts:
 - [Landscaping and lawn care](https://heymile.app/for/landscapers/): a route of properties, the nursery and equipment shop; English or Spanish
 - [Independent couriers](https://heymile.app/for/couriers/): medical, legal and parcel runs for many clients in one log
 - [Insurance adjusters](https://heymile.app/for/insurance-adjusters/): inspections and claim sites, near home or on deployment
+- [House cleaners](https://heymile.app/for/house-cleaners/): several homes a day and supply runs; English or Spanish
+- [Mobile notaries and loan signing agents](https://heymile.app/for/mobile-notaries/): signings at homes and offices, each drive with its purpose
+- [Pet sitters and dog walkers](https://heymile.app/for/pet-sitters/): many short drives between clients' homes
 
-## En español
+## Optional
 
 - [HeyMile en español](https://heymile.app/es/)
 - [Para quién es HeyMile](https://heymile.app/es/para/)
+- [Tarifa de millaje del IRS 2026](https://heymile.app/es/tarifa-de-millaje-irs/)
+- [Qué pide el IRS en un registro de millas](https://heymile.app/es/registro-de-millas-para-impuestos/)
 - [Conductores de rideshare](https://heymile.app/es/para/conductores-de-rideshare/)
 - [Repartidores](https://heymile.app/es/para/repartidores/)
 - [Contratistas y oficios](https://heymile.app/es/para/contratistas/)
 - [Salud y cuidado en casa](https://heymile.app/es/para/cuidado-en-casa/)
 - [Jardinería y paisajismo](https://heymile.app/es/para/jardineria/)
+- [Agentes de bienes raíces](https://heymile.app/es/para/agentes-de-bienes-raices/)
+- [Repartidores de paquetes](https://heymile.app/es/para/repartidores-de-paquetes/)
+- [Limpieza de casas y oficinas](https://heymile.app/es/para/limpieza/)
+- [Privacy Policy](https://heymile.app/privacy/)
+- [Terms of Service](https://heymile.app/terms/)
