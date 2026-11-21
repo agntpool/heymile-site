@@ -8,6 +8,7 @@ Key facts:
 - Platform: iPhone with iOS 26 or later, with CarPlay. Languages: English and Spanish (Spanish App Store name: "HeyMile: Registro de millas").
 - Price: $0.99 a month, auto-renewing, billed through the Apple Account. The first month is free for new subscribers. After cancelling, people can still read and export their records.
 - Automatic tracking: detects drives and logs miles even when the app is closed; can also start a drive when the car connects. A Drive control (Control Center, Lock Screen, Action button) starts or ends a drive by hand.
+- Required setup for automatic tracking: location access for HeyMile must be set to Always (iPhone Settings > HeyMile > Location > Always, with Precise Location on), and tracking must be turned on in the app (the top of HeyMile's first screen says "Tracking on"). When tracking is turned on, iOS first asks to allow location access, then to "Change to Always Allow". With "While Using the App" only, HeyMile cannot log drives on its own.
 - One tap, business or personal: when a drive ends, the Lock Screen (Live Activity), a Home Screen widget and CarPlay ask "Business or personal?". A business drive then gets its purpose, asked on the iPhone.
 - CarPlay: the car's screen shows the drive with two large buttons, Business (blue briefcase) and Personal (green house). After the drive it shows, for example, "Last drive: 22.8 mi" with the same two buttons.
 - Voice and typing: "From the office to 1200 Main St" logs a trip measured with Apple Maps; place names are looked up in Apple Maps. Questions like "How many miles this month?" and edits like "Make Monday's trip personal" work too. Requests are understood with Apple's on-device model; HeyMile asks before it adds, changes or deletes anything. Siri and Spotlight are supported.
@@ -55,7 +56,10 @@ Q: How much does HeyMile cost?
 A: $0.99 a month, and the first month is free for new subscribers. It renews each month until you cancel, billed through your Apple Account. If you cancel, you can still read and export your records.
 
 Q: Does HeyMile log drives automatically?
-A: Yes. HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers.
+A: Yes, once two things are on: location access set to Always, and tracking turned on. Then HeyMile detects your drives and logs the miles, even when the app is closed. You can also have every drive start when your car connects. When you arrive, the Lock Screen asks “Business or personal?” and one tap answers.
+
+Q: What do I need to turn on?
+A: In the iPhone’s Settings, open HeyMile, then Location, and choose Always, with Precise Location on. When you turn tracking on, iOS asks twice: allow location access, then choose Change to Always Allow. With While Using the App only, HeyMile can’t log drives on its own. Then check the top of HeyMile’s first screen: it should say Tracking on. If it says anything else, tap it.
 
 Q: Does HeyMile work with CarPlay?
 A: Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car.
@@ -97,6 +101,8 @@ Which rideshare miles count, such as the drive from home to your first pickup, d
 - Add a missed drive by voice. Say “From the airport to downtown” and HeyMile measures the route with Apple Maps, then asks before it logs anything.
 - Reports when you need them. Export the month or the year as a PDF or a spreadsheet, with each trip’s date, route, purpose and miles, and your odometer readings.
 
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
+
 ### Questions
 
 Q: Does HeyMile connect to my rideshare app?
@@ -133,6 +139,8 @@ Mixed days are where a log earns its keep: the drive to the store for an order i
 - Start a drive yourself. Add the Drive control to Control Center or the Action button to start or end a drive with one press.
 - One report for every app. Export the month or the year as a PDF or a spreadsheet, with business and personal miles kept apart.
 
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
+
 ### Questions
 
 Q: Will HeyMile keep logging while my delivery app is open?
@@ -166,6 +174,8 @@ The IRS expects each business drive in your records to show its business purpose
 - Find any trip in Spotlight. Search by place or purpose, such as a street name, to pull up every drive to it.
 - CarPlay between appointments. Business or Personal in one tap on the car’s screen, before you walk into the next showing.
 - Reports by month or year. A PDF or a spreadsheet with each trip’s date, route, purpose and miles, ready for your tax advisor.
+
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
 
 ### Questions
 
@@ -203,6 +213,8 @@ A log built as you go is far easier to stand behind than one rebuilt from invoic
 - Fix it by voice. Say “From the shop to 1200 Main St” to add a missed drive, or “Make Monday’s trip personal” to fix one. HeyMile asks before it changes anything.
 - A report your tax advisor can use. PDF or spreadsheet, month or year, with odometer readings.
 
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
+
 ### Questions
 
 Q: Can I log a drive after the fact?
@@ -236,6 +248,8 @@ Follow your agency’s rules on what goes in a mileage log. Many prefer a genera
 - Private by design. No account, no ads, no analytics. Your log lives on your iPhone and in your own iCloud, and we never see your trips or where you went.
 - Reports to send. Export the month as a PDF or a spreadsheet for your agency or your tax advisor.
 - In English or Spanish. HeyMile follows your iPhone’s language, typed or spoken.
+
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
 
 ### Questions
 
@@ -271,6 +285,8 @@ A log rebuilt at the end of the month from your calendar tends to miss the unpla
 - Ready for the expense report. Export the month as a PDF or a spreadsheet and attach it.
 - CarPlay in the car. Business or Personal with one tap on the car’s screen, between appointments.
 
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
+
 ### Questions
 
 Q: Can HeyMile make a monthly report for my expense report?
@@ -305,6 +321,8 @@ The IRS describes good records as ones made at or near the time of the drive, wi
 - Find every trip to a venue. Search Spotlight by place or purpose.
 - See the year. Every trip on one map, business in blue and personal in green, and a report as a PDF or a spreadsheet.
 
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
+
 ### Questions
 
 Q: Can I add a drive HeyMile missed?
@@ -336,6 +354,8 @@ Each stop on a route is a short drive, and short drives are the easiest to forge
 - In English or Spanish. HeyMile follows your iPhone’s language, typed or spoken, so everyone on your team can use it in the language they prefer.
 - A purpose in a few words. Something like “Weekly route” or “Estimate, new client” is enough.
 - Reports at the end of the season. PDF or spreadsheet, month or year.
+
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
 
 ### Questions
 
@@ -371,6 +391,8 @@ A single log across every client is simpler to keep, and simpler to hand to your
 - Ask your log. “How many miles this month?” HeyMile answers from your log.
 - Monthly reports. Export a PDF or a spreadsheet and see every trip of the year on one map.
 
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
+
 ### Questions
 
 Q: Can I keep one log for every client I drive for?
@@ -402,6 +424,8 @@ Adjusters know the value of documentation. The IRS expects the same of a mileage
 - Log by address. Say “From the hotel to 2200 Ridge Road”: HeyMile measures the miles with Apple Maps and asks before logging.
 - Find trips fast. Search Spotlight by place or purpose to find every drive to a property.
 - Reports and a map. Export the month as a PDF or a spreadsheet, and see every trip on one map.
+
+Before the first drive: set HeyMile’s location access to Always, with Precise Location on, and check that HeyMile’s first screen says Tracking on.
 
 ### Questions
 
