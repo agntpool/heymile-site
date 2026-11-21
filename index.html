@@ -308,9 +308,51 @@
     </figure>
 
     <div class="carplay-pair">
-      <figure class="car-frame">
-        <img src="/screens/carplay-driving.jpg" width="1480" height="888" loading="lazy" decoding="async" alt="A screen capture of HeyMile in the CarPlay Simulator as a drive begins: Driving · 0 mi, with Business and Personal buttons.">
-      </figure>
+      <div class="carplay-anim">
+      <!-- HeyMile's CarPlay screen, drawn and acted out: the miles roll, Business is tapped, and the same drive counts on the iPhone's Lock Screen card. -->
+      <div class="dash" role="img" aria-label="An illustration of HeyMile on a car’s screen. The title reads Driving and the miles count. Below are two large buttons: Business, a blue briefcase, and Personal, a green house. A tap on Business changes the title to Business and turns Personal grey. Below it, the same drive counts on the iPhone’s Lock Screen.">
+        <div class="car-screen" aria-hidden="true">
+          <div class="car-inner">
+          <div class="car-dock">
+            <span class="car-time">9:41</span>
+            <i class="on"></i><i></i><i></i>
+          </div>
+          <div class="car-main">
+            <p class="car-title"><span class="car-answer"><span class="ask">Driving · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span><span class="answered">Business · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span></span></p>
+            <div class="car-tiles">
+              <span class="car-tile business tapped">
+                <img class="sf" src="/icons/briefcase-blue.png" alt="" aria-hidden="true">
+                Business
+              </span>
+              <span class="car-tile personal">
+                <img class="sf" src="/icons/house-green.png" alt="" aria-hidden="true">
+                Personal
+              </span>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="live-card car-phone" aria-hidden="true">
+          <div class="live-row">
+            <span class="live-title blue">
+              <img class="sf glyph" src="/icons/car-blue.png" alt="" aria-hidden="true">
+              Driving <span class="live-since">Since 9:36 AM</span>
+            </span>
+            <span class="live-miles">
+              <span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span><small>mi</small>
+            </span>
+          </div>
+          <div class="live-buttons two">
+            <span class="live-button">Business</span>
+            <span class="live-button personal">Personal</span>
+          </div>
+        </div>
+        <p class="car-caption">The same drive, live on your iPhone.</p>
+      </div>
+        <p class="shot-caption">Illustration of HeyMile on CarPlay.</p>
+        <button class="pause" type="button" aria-pressed="false" hidden>Pause animation</button>
+      </div>
       <div>
         <h3>While you drive</h3>
         <p>The car’s screen shows the drive and its miles, with Business and Personal waiting. Nothing to type.</p>

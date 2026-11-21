@@ -2159,3 +2159,40 @@ html {
     margin-bottom: 10px;
   }
 }
+
+/* The animated CarPlay drawing, beside what it does. */
+.carplay-pair .dash {
+  width: 100%;
+  margin-top: 0;
+}
+
+.carplay-anim .pause {
+  margin: 16px 0 0;
+}
+
+/* Paused: the car's screen rests on its answer, as with reduced motion. */
+.paused .dash .car-main,
+.paused .dash .live-card.car-phone,
+.paused .dash .roller i,
+.paused .dash .car-answer span,
+.paused .dash .car-tile .sf {
+  animation: none;
+}
+
+.paused .dash .car-answer .ask {
+  opacity: 0;
+}
+
+/* Grid columns may shrink below their content's natural width, so the
+   drawing scales to the phone instead of widening the page. */
+.carplay-pair > * {
+  min-width: 0;
+}
+
+/* On a narrow phone the drawn drive card keeps the title, the miles and the
+   two answers; the start time would push it wider than the screen. */
+@media (max-width: 420px) {
+  .live-card .live-since {
+    display: none;
+  }
+}
