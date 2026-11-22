@@ -2304,16 +2304,27 @@ html {
 
 @keyframes car-phone-logged {
   0%, 46% { opacity: 0; transform: translateY(10px); }
-  50%, 95% { opacity: 1; transform: none; }
+  50%, 71% { opacity: 1; transform: none; }
+  74%, 100% { opacity: 0; }
+}
+
+/* After the tap on Business, the iPhone asks what the drive was for. */
+.dash .live-card.car-phone.done {
+  animation: car-phone-done var(--loop) ease infinite both;
+}
+
+@keyframes car-phone-done {
+  0%, 72% { opacity: 0; transform: translateY(10px); }
+  75%, 95% { opacity: 1; transform: none; }
   100% { opacity: 0; }
 }
 
 /* Still versions rest on the answered, parked state. */
 @media (prefers-reduced-motion: reduce) {
   .dash .live-card.car-phone { opacity: 0; }
-  .dash .live-card.car-phone.logged { opacity: 1; }
+  .dash .live-card.car-phone.done { opacity: 1; }
 }
 
 .paused .dash .live-card.car-phone { animation: none; opacity: 0; }
-.paused .dash .live-card.car-phone.logged { opacity: 1; }
+.paused .dash .live-card.car-phone.done { opacity: 1; }
 .paused .dash .live-button.tapped { animation: none; background: var(--lc-blue-solid); color: #fff; }

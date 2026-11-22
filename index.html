@@ -318,7 +318,7 @@
     <div class="carplay-pair">
       <div class="carplay-anim">
       <!-- HeyMile's CarPlay screen, drawn and acted out: the miles roll with nothing to tap, the drive ends, Business is tapped, and the same drive counts on the iPhone's Lock Screen card. -->
-      <div class="dash" role="img" aria-label="An illustration of HeyMile on a car’s screen. While driving, the title reads Driving and the miles count, with nothing to tap. When the drive ends, the title reads Last drive, 2.2 miles, and two large buttons appear: Business, a blue briefcase, and Personal, a green house. A tap on Business changes the title to Business and turns Personal gray. Below it, the same drive counts on the iPhone’s Lock Screen, then shows Drive logged, Business or personal?, and the same tap on Business.">
+      <div class="dash" role="img" aria-label="An illustration of HeyMile on a car’s screen. While driving, the title reads Driving and the miles count, with nothing to tap. When the drive ends, the title reads Last drive, 2.2 miles, and two large buttons appear: Business, a blue briefcase, and Personal, a green house. A tap on Business changes the title to Business and turns Personal gray. Below it, the same drive counts on the iPhone’s Lock Screen, then shows Drive logged, Business or personal?, the same tap on Business, and asks what the drive was for.">
         <div class="car-screen" aria-hidden="true">
           <div class="car-inner">
           <div class="car-dock">
@@ -366,6 +366,16 @@
               <span class="live-button tapped">Business</span>
               <span class="live-button personal">Personal</span>
             </div>
+          </div>
+          <div class="live-card car-phone done" aria-hidden="true">
+            <div class="live-row">
+              <span class="live-title green">
+                <img class="sf glyph" src="/icons/check-green.png" alt="" aria-hidden="true">
+                Business
+              </span>
+              <span class="live-miles">2.2<small>mi</small></span>
+            </div>
+            <p class="live-sub">What was the purpose?</p>
           </div>
         </div>
         <p class="car-caption">The same drive, live on your iPhone.</p>

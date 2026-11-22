@@ -273,7 +273,7 @@
     <div class="carplay-pair">
       <div class="carplay-anim">
       <!-- HeyMile's CarPlay screen, drawn and acted out: the miles roll with nothing to tap, the drive ends, Business is tapped, and the same drive counts on the iPhone's Lock Screen card. -->
-      <div class="dash" role="img" aria-label="Ilustración de HeyMile en la pantalla de un auto. Mientras manejas, el título dice Manejando y las millas suben, sin nada que tocar. Cuando termina el viaje, el título dice Último viaje, 2.2 millas, y aparecen dos botones grandes: Negocio, un maletín azul, y Personal, una casa verde. Un toque en Negocio cambia el título a Negocio y Personal se pone gris. Debajo, el mismo viaje se cuenta en la pantalla bloqueada del iPhone y luego muestra Viaje registrado, ¿Negocio o personal?, y el mismo toque en Negocio.">
+      <div class="dash" role="img" aria-label="Ilustración de HeyMile en la pantalla de un auto. Mientras manejas, el título dice Manejando y las millas suben, sin nada que tocar. Cuando termina el viaje, el título dice Último viaje, 2.2 millas, y aparecen dos botones grandes: Negocio, un maletín azul, y Personal, una casa verde. Un toque en Negocio cambia el título a Negocio y Personal se pone gris. Debajo, el mismo viaje se cuenta en la pantalla bloqueada del iPhone y luego muestra Viaje registrado, ¿Negocio o personal?, el mismo toque en Negocio, y pregunta para qué fue el viaje.">
         <div class="car-screen" aria-hidden="true">
           <div class="car-inner">
           <div class="car-dock">
@@ -321,6 +321,16 @@
               <span class="live-button tapped">Negocio</span>
               <span class="live-button personal">Personal</span>
             </div>
+          </div>
+          <div class="live-card car-phone done" aria-hidden="true">
+            <div class="live-row">
+              <span class="live-title green">
+                <img class="sf glyph" src="/icons/check-green.png" alt="" aria-hidden="true">
+                Negocio
+              </span>
+              <span class="live-miles">2.2<small>mi</small></span>
+            </div>
+            <p class="live-sub">¿Cuál fue el propósito?</p>
           </div>
         </div>
         <p class="car-caption">El mismo viaje, en vivo en tu iPhone.</p>
