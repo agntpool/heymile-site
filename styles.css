@@ -2272,8 +2272,7 @@ html {
 
 /* The iPhone card under the CarPlay drawing shows the drive while it is
    recording, and steps away when the car screen moves to "Last drive". */
-.dash .live-card.car-phone,
-.dash .car-caption {
+.dash .live-card.car-phone {
   animation: car-phone-drive var(--loop) ease infinite both;
 }
 
@@ -2283,10 +2282,38 @@ html {
   48%, 100% { opacity: 0; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .dash .car-caption { animation: none; }
+/* Both iPhone cards share one spot: "Driving" while the miles count, then
+   "Drive logged" with the question once the car shows "Last drive"; its
+   Business button is tapped at the same moment as the car's. */
+.car-phones {
+  display: grid;
+  width: min(360px, 100%);
+  margin: 18px 0 0 auto;
 }
 
-.paused .dash .car-caption {
-  animation: none;
+.car-phones .live-card.car-phone {
+  grid-area: 1 / 1;
+  width: 100%;
+  margin: 0;
+  align-self: end;
 }
+
+.dash .live-card.car-phone.logged {
+  animation: car-phone-logged var(--loop) ease infinite both;
+}
+
+@keyframes car-phone-logged {
+  0%, 46% { opacity: 0; transform: translateY(10px); }
+  50%, 95% { opacity: 1; transform: none; }
+  100% { opacity: 0; }
+}
+
+/* Still versions rest on the answered, parked state. */
+@media (prefers-reduced-motion: reduce) {
+  .dash .live-card.car-phone { opacity: 0; }
+  .dash .live-card.car-phone.logged { opacity: 1; }
+}
+
+.paused .dash .live-card.car-phone { animation: none; opacity: 0; }
+.paused .dash .live-card.car-phone.logged { opacity: 1; }
+.paused .dash .live-button.tapped { animation: none; background: var(--lc-blue-solid); color: #fff; }

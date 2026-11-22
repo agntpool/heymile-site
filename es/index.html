@@ -273,7 +273,7 @@
     <div class="carplay-pair">
       <div class="carplay-anim">
       <!-- HeyMile's CarPlay screen, drawn and acted out: the miles roll with nothing to tap, the drive ends, Business is tapped, and the same drive counts on the iPhone's Lock Screen card. -->
-      <div class="dash" role="img" aria-label="Ilustración de HeyMile en la pantalla de un auto. Mientras manejas, el título dice Manejando y las millas suben, sin nada que tocar. Cuando termina el viaje, el título dice Último viaje, 2.2 millas, y aparecen dos botones grandes: Negocio, un maletín azul, y Personal, una casa verde. Un toque en Negocio cambia el título a Negocio y Personal se pone gris. Debajo, el mismo viaje se cuenta en la pantalla bloqueada del iPhone.">
+      <div class="dash" role="img" aria-label="Ilustración de HeyMile en la pantalla de un auto. Mientras manejas, el título dice Manejando y las millas suben, sin nada que tocar. Cuando termina el viaje, el título dice Último viaje, 2.2 millas, y aparecen dos botones grandes: Negocio, un maletín azul, y Personal, una casa verde. Un toque en Negocio cambia el título a Negocio y Personal se pone gris. Debajo, el mismo viaje se cuenta en la pantalla bloqueada del iPhone y luego muestra Viaje registrado, ¿Negocio o personal?, y el mismo toque en Negocio.">
         <div class="car-screen" aria-hidden="true">
           <div class="car-inner">
           <div class="car-dock">
@@ -296,15 +296,31 @@
           </div>
         </div>
 
-        <div class="live-card car-phone" aria-hidden="true">
-          <div class="live-row">
-            <span class="live-title blue">
-              <img class="sf glyph" src="/icons/car-blue.png" alt="" aria-hidden="true">
-              Manejando <span class="live-since">Desde las 9:36 a. m.</span>
-            </span>
-            <span class="live-miles">
-              <span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span><small>mi</small>
-            </span>
+        <div class="car-phones">
+  <div class="live-card car-phone" aria-hidden="true">
+            <div class="live-row">
+              <span class="live-title blue">
+                <img class="sf glyph" src="/icons/car-blue.png" alt="" aria-hidden="true">
+                Manejando <span class="live-since">Desde las 9:36 a. m.</span>
+              </span>
+              <span class="live-miles">
+                <span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span><small>mi</small>
+              </span>
+            </div>
+          </div>
+          <div class="live-card car-phone logged" aria-hidden="true">
+            <div class="live-row">
+              <span class="live-title green">
+                <img class="sf glyph" src="/icons/check-green.png" alt="" aria-hidden="true">
+                Viaje registrado
+              </span>
+              <span class="live-miles">2.2<small>mi</small></span>
+            </div>
+            <p class="live-sub">¿Negocio o personal?</p>
+            <div class="live-buttons two">
+              <span class="live-button tapped">Negocio</span>
+              <span class="live-button personal">Personal</span>
+            </div>
           </div>
         </div>
         <p class="car-caption">El mismo viaje, en vivo en tu iPhone.</p>
