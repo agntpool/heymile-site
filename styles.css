@@ -409,7 +409,7 @@ a:focus-visible {
   }
 }
 
-/* A full-width band in the app's quiet grey. */
+/* A full-width band in the app's quiet gray. */
 .band {
   background: var(--fill);
   text-align: center;
@@ -464,7 +464,7 @@ a:focus-visible {
 /* The car beside "Driving" is the app's own icon, taken from its Lock Screen
    card, so the drawing and the screenshots show the same one. */
 /* Icons are Apple's SF Symbols, the same ones the app uses (car.fill,
-   briefcase.fill, house.fill...), as plain images already in their colour,
+   briefcase.fill, house.fill...), as plain images already in their color,
    so every browser shows them the same way. */
 .sf {
   display: inline-block;
@@ -835,7 +835,7 @@ a:focus-visible {
   48%, 100% { background: #0a84ff; transform: none; }
 }
 
-/* A few words, centred, with room around them. */
+/* A few words, centered, with room around them. */
 .statement {
   text-align: center;
 }
@@ -1262,7 +1262,7 @@ a:focus-visible {
   48%, 100% { transform: none; }
 }
 
-/* The other answer turns grey once one is chosen, as on the real screen. */
+/* The other answer turns gray once one is chosen, as on the real screen. */
 @keyframes car-dim {
   0%, 45% { filter: none; opacity: 1; }
   48%, 100% { filter: grayscale(1); opacity: 0.55; }
