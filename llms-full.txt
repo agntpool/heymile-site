@@ -118,7 +118,7 @@ A: No. HeyMile is a record-keeping tool. Dollar figures are estimates based on y
 ## Guide: IRS standard mileage rates for 2026
 Page: https://heymile.app/irs-mileage-rate/
 
-Checked against irs.gov on November 21, 2026.
+Checked against irs.gov on November 21, 2026. General information from IRS publications, not tax advice. HeyMile is not affiliated with or endorsed by the IRS.
 
 For 2026 the IRS set two business rates: 72.5 cents a mile for drives from January 1 to June 30, and 76 cents a mile for drives from July 1 to December 31.
 
@@ -179,7 +179,7 @@ A: Not as of November 21, 2026. This page will be updated when it is announced.
 ## Guide: What a mileage log should include, according to the IRS
 Page: https://heymile.app/mileage-log-requirements/
 
-Checked against irs.gov on November 21, 2026. Based on the edition of Publication 463 for 2025 returns.
+Checked against irs.gov on November 21, 2026. General information from IRS publications, not tax advice. HeyMile is not affiliated with or endorsed by the IRS. Based on the edition of Publication 463 for 2025 returns.
 
 IRS Publication 463 (https://www.irs.gov/publications/p463) lists what your records should show for each business use of a car, and when to write it down. Here is a plain-language summary, with links to the source.
 
