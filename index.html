@@ -173,7 +173,7 @@
      "name": "Does HeyMile work with CarPlay?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car."
+      "text": "Yes. On the car’s screen HeyMile shows the drive’s miles while you drive. When the drive ends, two big buttons, Business and Personal, let you answer with one tap before you leave the car."
      }
     },
     {
@@ -317,8 +317,8 @@
 
     <div class="carplay-pair">
       <div class="carplay-anim">
-      <!-- HeyMile's CarPlay screen, drawn and acted out: the miles roll, Business is tapped, and the same drive counts on the iPhone's Lock Screen card. -->
-      <div class="dash" role="img" aria-label="An illustration of HeyMile on a car’s screen. The title reads Driving and the miles count. Below are two large buttons: Business, a blue briefcase, and Personal, a green house. A tap on Business changes the title to Business and turns Personal gray. Below it, the same drive counts on the iPhone’s Lock Screen.">
+      <!-- HeyMile's CarPlay screen, drawn and acted out: the miles roll with nothing to tap, the drive ends, Business is tapped, and the same drive counts on the iPhone's Lock Screen card. -->
+      <div class="dash" role="img" aria-label="An illustration of HeyMile on a car’s screen. While driving, the title reads Driving and the miles count, with nothing to tap. When the drive ends, the title reads Last drive, 2.2 miles, and two large buttons appear: Business, a blue briefcase, and Personal, a green house. A tap on Business changes the title to Business and turns Personal gray. Below it, the same drive counts on the iPhone’s Lock Screen.">
         <div class="car-screen" aria-hidden="true">
           <div class="car-inner">
           <div class="car-dock">
@@ -326,7 +326,7 @@
             <i class="on"></i><i></i><i></i>
           </div>
           <div class="car-main">
-            <p class="car-title"><span class="car-answer"><span class="ask">Driving · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span><span class="answered">Business · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span></span></p>
+            <p class="car-title"><span class="car-answer"><span class="ask">Driving · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span><span class="last">Last drive · 2.2&nbsp;mi</span><span class="answered">Business · <span class="car-miles"><span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span>&nbsp;mi</span></span></span></p>
             <div class="car-tiles">
               <span class="car-tile business tapped">
                 <img class="sf" src="/icons/briefcase-blue.png" alt="" aria-hidden="true">
@@ -351,10 +351,6 @@
               <span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span><small>mi</small>
             </span>
           </div>
-          <div class="live-buttons two">
-            <span class="live-button">Business</span>
-            <span class="live-button personal">Personal</span>
-          </div>
         </div>
         <p class="car-caption">The same drive, live on your iPhone.</p>
       </div>
@@ -363,9 +359,9 @@
       </div>
       <div>
         <h3>While you drive</h3>
-        <p>The car’s screen shows the drive and its miles, with Business and Personal waiting. Nothing to type.</p>
+        <p>The car’s screen shows the drive and its miles. Nothing to tap while you’re moving.</p>
         <h3>When you park</h3>
-        <p>“Last drive: 22.8 mi.” One tap files it. Pick Business and HeyMile asks what it was for on your iPhone.</p>
+        <p>“Last drive: 22.8 mi”, with two big buttons. One tap files it. Pick Business and HeyMile asks what it was for on your iPhone.</p>
         <h3>And on your iPhone</h3>
         <p>The same question waits on the Lock Screen and in the widget, so you can answer whenever it suits you.</p>
       </div>
@@ -400,7 +396,7 @@
     <button class="pause" type="button" aria-pressed="false" hidden>Pause animation</button>
 
     <!-- The Lock Screen card, acted out: miles count, the drive is logged, one tap says business or personal. -->
-    <div class="live reveal" role="img" aria-label="An animation of HeyMile on the Lock Screen. While driving, the miles count up with two buttons, Business and Personal. Then: Drive logged, 2.2 miles. Business or personal? One tap on Business, and HeyMile asks what the drive was for.">
+    <div class="live reveal" role="img" aria-label="An animation of HeyMile on the Lock Screen. While driving, the miles count up. Then: Drive logged, 2.2 miles. Business or personal? One tap on Business, and HeyMile asks what the drive was for.">
       <div class="live-card is-driving" aria-hidden="true">
         <div class="live-row">
           <span class="live-title blue">
@@ -410,10 +406,6 @@
           <span class="live-miles">
             <span class="roller ones"><i>1</i><i>2</i></span>.<span class="roller tenths"><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i><i>1</i><i>2</i></span><small>mi</small>
           </span>
-        </div>
-        <div class="live-buttons two">
-          <span class="live-button">Business</span>
-          <span class="live-button personal">Personal</span>
         </div>
       </div>
 
@@ -454,12 +446,11 @@
           <p class="note">Illustration of the Lock Screen. It shows when a drive starts in the app or from your car.</p>
         </div>
         <figure class="phone">
-        <div class="lockshot" role="img" aria-label="An iPhone Lock Screen at 9:43 on Tuesday, November 17, showing HeyMile: Driving since 9:36 AM, 2.2 miles, with two buttons, Business and Personal.">
+        <div class="lockshot" role="img" aria-label="An iPhone Lock Screen at 9:43 on Tuesday, November 17, showing HeyMile: Driving since 9:36 AM, 2.2 miles.">
             <p class="lock-date">Tuesday, November 17</p>
             <p class="lock-time">9:43</p>
             <div class="lock-card">
               <div class="lock-row"><span class="lock-title blue"><img class="sf glyph" src="/icons/car-blue.png" alt="">Driving <span class="lock-since">Since 9:36 AM</span></span><span class="lock-miles">2.2<small>mi</small></span></div>
-              <div class="lock-buttons"><span class="lock-button">Business</span><span class="lock-button personal">Personal</span></div>
             </div>
           </div>
       </figure>
@@ -517,7 +508,6 @@
             <p class="lock-time">9:43</p>
             <div class="lock-card">
               <div class="lock-row"><span class="lock-title blue"><img class="sf glyph" src="/icons/car-blue.png" alt="">Driving <span class="lock-since">Since 9:36 AM</span></span><span class="lock-miles">2.2<small>mi</small></span></div>
-              <div class="lock-buttons"><span class="lock-button">Business</span><span class="lock-button personal">Personal</span></div>
             </div>
           </div>
           <div class="lockshot" aria-hidden="true">
@@ -580,7 +570,7 @@
       <dt>What do I need to turn on?</dt>
       <dd>In the iPhone’s Settings, tap Apps, then HeyMile, then Location, and choose <strong>Always</strong>, with Precise Location on. When you turn tracking on, iOS asks twice: allow location access, then choose Change to Always Allow. With While Using the App only, HeyMile can’t log drives on its own. Then check the top of HeyMile’s first screen: it should say <strong>Tracking on</strong>. If it says anything else, tap it.</dd>
       <dt>Does HeyMile work with CarPlay?</dt>
-      <dd>Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car.</dd>
+      <dd>Yes. On the car’s screen HeyMile shows the drive’s miles while you drive. When the drive ends, two big buttons, Business and Personal, let you answer with one tap before you leave the car.</dd>
       <dt>Do I need CarPlay to use HeyMile?</dt>
       <dd>No. CarPlay is optional. Without it, the iPhone’s Lock Screen and the Home Screen widget ask “Business or personal?” after each drive, and one tap answers. CarPlay adds two big buttons on the car’s screen.</dd>
       <dt>What is in the report?</dt>

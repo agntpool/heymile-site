@@ -2196,3 +2196,97 @@ html {
     display: none;
   }
 }
+
+/* CarPlay drawing, parked-only answers: "Driving" with no buttons while the
+   miles count, then "Last drive" with the two buttons, then the tap. */
+.car-answer .last {
+  color: #fff;
+  animation: car-last var(--loop) ease infinite both;
+}
+
+.car-main .car-answer .last {
+  white-space: nowrap;
+}
+
+.dash .car-tiles {
+  animation: car-tiles-in var(--loop) ease infinite both;
+}
+
+.dash .car-answer .ask { animation-name: car-ask-park; }
+.dash .car-answer .answered { animation-name: car-answered-park; }
+.dash .car-tile.tapped .sf { animation-name: car-press-park; }
+.dash .car-tile.personal .sf { animation-name: car-dim-park; }
+
+@keyframes car-ask-park {
+  0%, 45% { opacity: 1; }
+  48%, 100% { opacity: 0; }
+}
+
+@keyframes car-last {
+  0%, 46% { opacity: 0; transform: translateY(6px); }
+  50%, 67% { opacity: 1; transform: none; }
+  70%, 100% { opacity: 0; }
+}
+
+@keyframes car-answered-park {
+  0%, 68% { opacity: 0; transform: translateY(6px); }
+  72%, 100% { opacity: 1; transform: none; }
+}
+
+@keyframes car-tiles-in {
+  0%, 46% { opacity: 0; transform: translateY(8px); }
+  51%, 100% { opacity: 1; transform: none; }
+}
+
+@keyframes car-press-park {
+  0%, 64% { transform: none; }
+  67% { transform: scale(0.9); }
+  70%, 100% { transform: none; }
+}
+
+@keyframes car-dim-park {
+  0%, 68% { filter: none; opacity: 1; }
+  71%, 100% { filter: grayscale(1); opacity: 0.55; }
+}
+
+/* Still versions (reduced motion or paused) rest on the answered screen. */
+@media (prefers-reduced-motion: reduce) {
+  .dash .car-tiles,
+  .car-answer .last {
+    animation: none;
+  }
+
+  .car-answer .last {
+    opacity: 0;
+  }
+}
+
+.paused .dash .car-tiles,
+.paused .dash .car-answer .last {
+  animation: none;
+}
+
+.paused .dash .car-answer .last {
+  opacity: 0;
+}
+
+/* The iPhone card under the CarPlay drawing shows the drive while it is
+   recording, and steps away when the car screen moves to "Last drive". */
+.dash .live-card.car-phone,
+.dash .car-caption {
+  animation: car-phone-drive var(--loop) ease infinite both;
+}
+
+@keyframes car-phone-drive {
+  0% { opacity: 0; }
+  4%, 44% { opacity: 1; }
+  48%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dash .car-caption { animation: none; }
+}
+
+.paused .dash .car-caption {
+  animation: none;
+}

@@ -16,7 +16,7 @@ Last updated: 2026-11-21. Current version: 1.0 (first released November 21, 2026
 - Battery: between drives HeyMile relies on low-power signals from iOS; precise GPS runs only while a drive is being recorded.
 - One tap, business or personal: when a drive ends, the Lock Screen (Live Activity), a Home Screen widget and CarPlay ask "Business or personal?". A business drive then gets its purpose, which is asked on the iPhone.
 - CarPlay is optional: HeyMile works on the iPhone alone, where the Lock Screen and the Home Screen widget ask "Business or personal?" after each drive with one tap. People without CarPlay get the same automatic logging and one-tap answers.
-- CarPlay: while driving, the car's screen shows the miles so far (for example "Driving · 2.4 mi") with two large buttons, Business (blue briefcase) and Personal (green house). After the drive it shows, for example, "Last drive: 22.8 mi" with the same buttons. The purpose of a business drive is never asked in the car.
+- CarPlay: while driving, the car's screen shows only the miles so far (for example "Driving · 2.4 mi"), with nothing to tap. When the drive ends, it shows, for example, "Last drive: 22.8 mi" with two large buttons, Business (blue briefcase) and Personal (green house). The Lock Screen card works the same way: miles while driving, the question when the drive ends. The purpose of a business drive is never asked in the car.
 - Works alongside other apps: HeyMile does not connect to, sign in to, or read data from rideshare, delivery or booking apps. It logs the drives the iPhone detects, so miles from several apps end up in one log.
 - Voice and typing: "From the office to 1200 Main St" logs a trip measured with Apple Maps; place names are looked up in Apple Maps. Questions like "How many miles this month?" and edits like "Make Monday's trip personal" work too. HeyMile asks before it adds, changes or deletes anything. On iPhones with Apple Intelligence, requests are understood by Apple's on-device model, which can only read the log; on other iPhones the same example requests work through HeyMile's own rules. Spotlight can find any trip by place or purpose.
 - Reports: PDF or spreadsheet for a month or a year, with each trip's date, route, purpose and miles, plus odometer readings. Dollar figures are estimates using the IRS standard mileage rate for the day each trip was driven. HeyMile starts with the rates in effect from July 1, 2026 (76 cents a mile for business), and trips can't be dated before July 1, 2026.
@@ -86,7 +86,7 @@ Q: What do I need to turn on?
 A: In the iPhone’s Settings, tap Apps, then HeyMile, then Location, and choose Always, with Precise Location on. When you turn tracking on, iOS asks twice: allow location access, then choose Change to Always Allow. With While Using the App only, HeyMile can’t log drives on its own. Then check the top of HeyMile’s first screen: it should say Tracking on. If it says anything else, tap it.
 
 Q: Does HeyMile work with CarPlay?
-A: Yes. On the car’s screen HeyMile shows the drive with two big buttons, Business and Personal, so you can answer with one tap before you leave the car.
+A: Yes. On the car’s screen HeyMile shows the drive’s miles while you drive. When the drive ends, two big buttons, Business and Personal, let you answer with one tap before you leave the car.
 
 Q: Do I need CarPlay to use HeyMile?
 A: No. CarPlay is optional. Without it, the iPhone’s Lock Screen and the Home Screen widget ask “Business or personal?” after each drive, and one tap answers. CarPlay adds two big buttons on the car’s screen.
@@ -238,15 +238,15 @@ A: Publication 463 says generally 3 years from the date you file the return that
 ## Guide: A mileage log on your car’s screen
 Page: https://heymile.app/carplay-mileage-tracker/
 
-HeyMile works with Apple CarPlay. The car’s screen shows the drive’s miles with two big buttons, Business and Personal. One tap answers the drive, when it’s safe or once you park.
+HeyMile works with Apple CarPlay. While you drive, the car’s screen shows the drive’s miles. When the drive ends, two big buttons, Business and Personal, answer it with one tap.
 
 ### While you drive
 
-The car’s screen shows “Driving” and the miles so far, updated at most every 10 seconds, with two large buttons below: Business, a blue briefcase, and Personal, a green house. When it’s safe, or once you park, tap one and the title shows your answer. Tap the other to change it. There is nothing to type and no list to scroll.
+The car’s screen shows “Driving” and the miles so far, updated at most every 10 seconds. There is nothing to tap while the car is moving.
 
 ### When you park
 
-If the drive wasn’t answered on the way, the car’s screen shows the last drive, such as “Last drive: 22.8 mi”, with the same two buttons, so you can answer before you leave the car. The same question waits on your iPhone’s Lock Screen and in the widget.
+When the drive ends, the car’s screen shows it, such as “Last drive: 22.8 mi”, with two large buttons: Business, a blue briefcase, and Personal, a green house. One tap answers it before you leave the car. The same question waits on your iPhone’s Lock Screen and in the widget.
 
 ### The purpose is asked on your iPhone
 
@@ -268,7 +268,7 @@ Q: Does HeyMile need CarPlay?
 A: No. HeyMile works on the iPhone alone: the Lock Screen and the widget ask the same question. CarPlay adds the two buttons on the car’s screen.
 
 Q: Do I type anything in the car?
-A: No. On CarPlay you only tap Business or Personal. The purpose of a business drive is asked on your iPhone, never in the car.
+A: No. When a drive ends, you only tap Business or Personal. The purpose of a business drive is asked on your iPhone, never in the car.
 
 Q: How do I get the question on my car’s screen after I park?
 A: Turn on Show in CarPlay in the iPhone’s Settings, under Notifications, then HeyMile.
@@ -293,7 +293,7 @@ Which miles count, such as the drive from home to your first pickup, is a questi
 ### How HeyMile helps
 
 - Every drive, logged on its own. HeyMile detects your drives and logs the miles, even with the app closed. Set it to start a drive when your car connects, so drives are caught from the start.
-- Answer on CarPlay. Two big buttons on the car’s screen: Business and Personal. Tap one when you’re stopped at the curb between rides. There’s nothing to type.
+- Answer on CarPlay. When a drive ends, two big buttons on the car’s screen: Business and Personal. One tap answers it, with nothing to tap while you’re moving.
 - Or on the Lock Screen. When a drive ends, the Lock Screen asks “Business or personal?” One tap, and you’re back in the rideshare app.
 - Add a missed drive by voice. Say “From the airport to downtown” and HeyMile measures the route with Apple Maps, then asks before it logs anything.
 - Reports when you need them. Export the month or the year as a PDF or a spreadsheet, with each trip’s date, route, purpose and miles, and your odometer readings.
