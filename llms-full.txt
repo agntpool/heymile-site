@@ -250,7 +250,7 @@ When the drive ends, the car’s screen shows it, such as “Last drive: 22.8 mi
 
 ### The purpose is asked on your iPhone
 
-What a business drive was for is never asked in the car. HeyMile asks on your iPhone: on the Lock Screen card, in a notification, or the next time you open the app.
+The purpose of a business drive is never asked in the car. HeyMile asks on your iPhone: on the Lock Screen card, in a notification, or the next time you open the app.
 
 ### Start every drive when your car connects
 
@@ -366,7 +366,7 @@ The IRS expects each business drive in your records to show its business purpose
 
 ### How HeyMile helps
 
-- Business, then the purpose. Tap Business on the Lock Screen and HeyMile asks what the drive was for. One answer, saved with the trip.
+- Business, then the purpose. Tap Business on the Lock Screen and HeyMile asks for the purpose. One answer, saved with the trip.
 - Log by place name. Say “From the office to 412 Elm St”: HeyMile finds the address in Apple Maps, asks if it’s the right one, and measures the miles.
 - Find any trip in Spotlight. Search by place or purpose, such as a street name, to pull up every drive to it.
 - CarPlay between appointments. Business or Personal in one tap on the car’s screen, before you walk into the next showing.
@@ -409,7 +409,7 @@ Which method fits your business is a question for your tax advisor.
 
 - Starts with the truck. Set HeyMile to start a drive when your vehicle connects to your iPhone, or let it detect drives on its own.
 - Big buttons on CarPlay. Business and Personal fill the car’s screen, so one tap answers the drive before you climb out.
-- Business, then the purpose. Tap Business and HeyMile asks what the drive was for, and saves your answer with the trip.
+- Business, then the purpose. Tap Business and HeyMile asks for the purpose, and saves your answer with the trip.
 - Fix it by voice. Say “From the shop to 1200 Main St” to add a missed drive, or “Make Monday’s trip personal” to fix one. HeyMile asks before it changes anything.
 - A report to share. PDF or spreadsheet, month or year, with odometer readings.
 
@@ -480,7 +480,7 @@ HeyMile logs the drives it detects as you go, so the month’s report is ready w
 ### How HeyMile helps
 
 - Logs every call. HeyMile detects drives and logs the miles, so the visit you added at the last minute is there too.
-- Purpose in one answer. Tap Business and HeyMile asks what the drive was for.
+- Purpose in one answer. Tap Business and HeyMile asks for the purpose.
 - Ask your log. “How many miles this month?” or “What trips did I take Monday?” HeyMile answers from your log.
 - Ready for the expense report. Export the month as a PDF or a spreadsheet and attach it.
 - CarPlay in the car. Business or Personal with one tap on the car’s screen, between appointments.
@@ -516,7 +516,7 @@ The IRS describes good records as ones made at or near the time of the drive, wi
 ### How HeyMile helps
 
 - Nothing to remember. HeyMile detects drives and logs the miles, so the scouting drive on a Sunday is in the log.
-- Business, then the purpose. One tap on the Lock Screen, and HeyMile asks what the drive was for.
+- Business, then the purpose. One tap on the Lock Screen, and HeyMile asks for the purpose.
 - Name the place. Say “From the studio to the botanical garden”: HeyMile finds it in Apple Maps, asks if it’s the right one, and measures the miles.
 - Find every trip to a venue. Search Spotlight by place or purpose.
 - See the year. Every trip on one map, business in blue and personal in green, and a report as a PDF or a spreadsheet.
@@ -552,7 +552,7 @@ Each stop on a route is a short drive, and short drives are the easiest to forge
 - Every stop, logged. HeyMile detects each drive and logs the miles, even with the app closed. Or have it start when your truck connects.
 - CarPlay in the truck. Business or Personal with one tap on the car’s screen, before you unload.
 - In English or Spanish. HeyMile follows your iPhone’s language, typed or spoken, so everyone on your team can use it in the language they prefer.
-- Business, then the purpose. Tap Business and HeyMile asks what the drive was for.
+- Business, then the purpose. Tap Business and HeyMile asks for the purpose.
 - Reports at the end of the season. PDF or spreadsheet, month or year.
 
 Before the first drive: set HeyMile’s location access to Always (Settings > Apps > HeyMile > Location), with Precise Location on, and check that HeyMile’s first screen says Tracking on.
@@ -587,7 +587,7 @@ HeyMile keeps the drives for every client in one log.
 
 - Long days, logged. HeyMile detects your drives and logs the miles, even with the app closed.
 - One tap on CarPlay. Business or Personal on the car’s screen, at each stop.
-- A purpose for each drive. After you tap Business, HeyMile asks what the drive was for.
+- A purpose for each drive. After you tap Business, HeyMile asks for the purpose.
 - Ask your log. “How many miles this month?” HeyMile answers from your log.
 - Monthly reports. Export a PDF or a spreadsheet and see every trip of the year on one map.
 
@@ -620,7 +620,7 @@ The IRS describes what a mileage record shows: each business drive’s date, des
 ### How HeyMile helps
 
 - Every inspection drive. HeyMile detects drives and logs the miles, wherever you take your iPhone.
-- A purpose for each. Tap Business and HeyMile asks what the drive was for.
+- A purpose for each. Tap Business and HeyMile asks for the purpose.
 - Log by address. Say “From the hotel to 2200 Ridge Road”: HeyMile measures the miles with Apple Maps and asks before logging.
 - Find trips fast. Search Spotlight by place or purpose to find every drive to a property.
 - Reports and a map. Export the month as a PDF or a spreadsheet, and see every trip on one map.
@@ -656,7 +656,7 @@ If you’re self-employed, the miles between work locations may be deductible, a
 ### How HeyMile helps
 
 - Every client visit, logged. HeyMile detects each drive and logs the miles, even with the app closed.
-- One tap between homes. When you park, the Lock Screen asks “Business or personal?” Tap Business and HeyMile asks what the drive was for.
+- One tap between homes. When you park, the Lock Screen asks “Business or personal?” Tap Business and HeyMile asks for the purpose.
 - In English or Spanish. HeyMile follows your iPhone’s language, typed or spoken.
 - Add a drive by voice. Say “From the supply store to 1200 Main St” and HeyMile measures it with Apple Maps, then asks before it logs it.
 - A report for tax time. A PDF or a spreadsheet for the month or the year, with business and personal miles kept apart.
@@ -692,7 +692,7 @@ The IRS expects each business drive’s date, destination, purpose and miles, ke
 ### How HeyMile helps
 
 - Every appointment, logged. HeyMile detects drives and logs the miles, so the last-minute evening signing is in the log too.
-- A purpose for each. Tap Business and HeyMile asks what the drive was for.
+- A purpose for each. Tap Business and HeyMile asks for the purpose.
 - Log by address or place. Say “From home to 400 Oak Ave” and HeyMile measures the miles with Apple Maps, then asks before logging.
 - CarPlay between signings. Business or Personal in one tap on the car’s screen.
 - Reports by month or year. A PDF or a spreadsheet with each trip’s date, route, purpose and miles.
